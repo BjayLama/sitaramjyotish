@@ -1196,7 +1196,7 @@ address, .footer-div  {
 	margin: 0 auto;
 }
 .counter-num {
-	font-size: 21px;
+	font-size: 17px;
     font-weight: 700;
 	color: #fff;
     position: absolute;
@@ -1428,7 +1428,9 @@ nav .btn .icon {
 .sub-menu-container {
 	padding-left: 0;
 }
-
+#search-box.second {
+	display: none;
+}
 /* #sidebar-menu */
 @media only screen and (max-width: 1150px) {
 	.menu-link {
@@ -1563,7 +1565,9 @@ nav .btn .icon {
 	#logo img {
 		height: auto;
 	}
-
+	.landing-slider .pr-0 {
+		padding-right: 15px !important;
+	}
 	#nav-wrap {
 		display: none;
 	}
@@ -1711,6 +1715,7 @@ nav .btn .icon {
 	#search-box.second {
 		border-bottom: 1px solid #eaeaea;
 		margin-top: 8px;
+		display: block;
 	}
 	.menu-right .btn {
 		transform: scale(0.7);
