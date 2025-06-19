@@ -176,6 +176,7 @@
 	padding: 40px 0;
 	padding-bottom: 75px;
 	position: relative;
+	overflow: hidden;
 }
 
 .about-bg {
@@ -252,6 +253,7 @@
 .service-section.blogs {
 	padding-top: 55px;
 	background-color: #f6f6f6;
+	position: relative;
 }
 .service-heading {
 	margin-bottom: 30px;
@@ -1166,6 +1168,7 @@ address, .footer-div  {
 .constellation-section {
 	padding: 70px 0;
 	position: relative;
+	overflow: hidden;
 }
 
 .constellation-section::before {
@@ -1429,6 +1432,7 @@ address, .footer-div  {
 .country-section {
 	padding: 75px 0;
 	position: relative;
+	overflow: hidden;
 }
 
 .country-section::before {
@@ -1610,6 +1614,7 @@ nav .btn .icon {
 
 .product-section {
 	padding: 75px 0;
+	background-color: #fafafa;
 }
 
 .product-card {
@@ -1998,8 +2003,8 @@ nav .btn .icon {
 		bottom: 40%;
 	}
 
-	.service-section.blogs .swiper-button-next, .service-section.blogs .swiper-button-prev {
-		bottom: 42%;
+	.product-section .swiper-button-next, .product-section .swiper-button-prev {
+		bottom: 43%;
 	}
 	.swiper-button-prev {
 		right: auto;
