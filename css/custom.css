@@ -780,8 +780,22 @@
 
 #footer {
 	border-top: 1px solid #d6d6d6;
-	border-bottom: 1px solid #d6d6d6;
 	background-color: #fafafa;
+	position: relative;
+}
+
+#footer::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-image: url('../images/landing/bg-moon.png');
+	background-position: left;
+	background-repeat: repeat;
+	opacity: 0.45;
+	background-size: contain;
 }
 
 .footer-titles {
@@ -848,8 +862,10 @@ address, .footer-div  {
 }
 #copyrights {
 	padding: 8px 0;
-	background-color: #fafafa;
-	border-top: 1px solid #d6d6d6;
+	background-color: #d20609;
+	color: #fff;
+	position: relative;
+	z-index: 5;
 }
 #copyrights .col-md-6 {
 	padding-bottom: 0;
