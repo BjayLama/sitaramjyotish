@@ -1793,6 +1793,9 @@ nav .btn .icon {
 	.as_sign_box:after, .as_sign_box:before {
 		display: none;
 	}
+	.as_sign_box {
+		background-color: #5B0069;
+	}
 	.as_sign_ul li:first-child, .as_sign_ul li:last-child, .as_sign_ul li:nth-child(2),
 	.as_sign_ul li:nth-child(5), .as_sign_ul.as_sign_ul_right li:first-child, .as_sign_ul.as_sign_ul_right li:last-child, .as_sign_ul.as_sign_ul_right li:nth-child(2), .as_sign_ul.as_sign_ul_right li:nth-child(5) {
 		transform: translateX(0);
