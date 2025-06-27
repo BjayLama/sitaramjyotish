@@ -2490,6 +2490,14 @@ nav .btn .icon {
 	.counter-section::before {
 		background-attachment: inherit;
 	}
+
+	.const-image::before {
+		animation: spin 22s infinite linear;
+		-webkit-animation: spin 22s infinite linear;
+	}
+	.as_service_img .as_service_img {
+		margin-right: 15px;
+	}
 }
 @media only screen and (min-width: 1400px) {
 	#logo img {
