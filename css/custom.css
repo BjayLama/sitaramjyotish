@@ -2485,8 +2485,11 @@ nav .btn .icon {
 		font-size: 34px;
 	}
 	.country-section, .service-section {
-	padding-bottom: 65px;
-}
+		padding-bottom: 65px;
+	}
+	.counter-section::before {
+		background-attachment: inherit;
+	}
 }
 @media only screen and (min-width: 1400px) {
 	#logo img {

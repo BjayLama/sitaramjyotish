@@ -3631,6 +3631,11 @@
 		$("#main-menu").click(function (e) {
 			$(this).removeClass("show-main-menu");
 			$("#sidebar-menu").removeClass("show-sidebar");
+			$(".primary-menu-trigger").removeClass("primary-menu-trigger-active");
+			// alert("working")
+		});
+		$(".menu-close").click(function (e) {
+			$(".primary-menu-trigger").removeClass("primary-menu-trigger-active");
 			// alert("working")
 		});
 		$("#sidebar-menu").click(function (e) {
