@@ -70,7 +70,7 @@
 	position: absolute;
 	background-color: #fff;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-	border-radius: 8px;
+	/* border-radius: 8px; */
 	opacity: 0;
 	visibility: hidden;
 	transition: all ease-in-out 0.35s;
@@ -148,20 +148,37 @@
 	padding: 75px 0;
 	overflow: hidden;
 }
-.planets-section::before, .counter-section::before {
+.planets-section::before {
 	content: '';
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: url('../images/landing/bg3.jpg');
+	background-image: url('../images/landing/bg-jyotish.jpg');
 	background-size: cover;
 	background-position: center;
 	opacity: 0.75;
 	background-repeat: repeat;
 	transform-origin: center;
-	animation: kenburns 25s ease-in-out infinite alternate;
+	animation: kenburns 45s ease-in-out infinite alternate;
+	/* animation: rotate 50s linear infinite; */
+}
+.counter-section::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/landing/bg-counter.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	opacity: 0.75;
+	background-repeat: repeat;
+	transform-origin: center;
+	/* animation: kenburns 25s ease-in-out infinite alternate; */
 	/* animation: rotate 50s linear infinite; */
 }
 @keyframes kenburns {
@@ -251,39 +268,60 @@
 
 .service-section {
 	padding: 75px 0;
+	padding-bottom: 100px;
+	overflow: hidden;
+	position: relative;
 	/* background-color: #fff3eb; */
 }
 
 .service-section.blogs {
 	padding-top: 55px;
-	background-color: #f6f6f6;
+	background-color: #ffffff;
 	position: relative;
 }
 .service-heading {
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 	position: relative;
 }
+
+
 
 .service-card {
 	border-radius: 16px;
 	border: 1px solid #d6d6d6;
 	overflow: hidden;
+	margin-bottom: 30px;
 }
 .service-info {
 	padding: 25px;
 	border-top: 1px solid #d6d6d6;
 }
+
+.country-title.testi-header {
+	margin-bottom: 45px;
+	z-index: 5;
+	position: relative;
+	font-size: 48px;
+}
 .service-heading-title {
 	font-size: 42px;
 	font-weight: 800;
 	margin-bottom: 6px;
+	/* color: #D20609;
+    background: -webkit-linear-gradient(#5B0069, #D20609);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+	color: #fff;
+}
+.service-section.blogs .service-heading-title, .product-section .service-heading-title {
 	color: #D20609;
     background: -webkit-linear-gradient(#5B0069, #D20609);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    letter-spacing: -1px;
 }
 .service-title {
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 700;
 	margin-bottom: 8px;
 }
@@ -315,10 +353,27 @@
 .planet-heading {
 	margin-bottom: 45px;
 	color: #fff;
+	position: relative;
+	z-index: 5;
 }
+
+
 .planet-heading .planet-title {
 	font-size: 42px;
 	font-weight: 800;
+	margin-bottom: 8px;
+}
+
+.planet-subtitle {
+	text-align: justify;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;  
+	overflow: hidden;
+}
+
+.planets-card-right {
+	padding-left: 45px;
 }
 .planets-section .swiper-pagination {
 	bottom: -3px !important;
@@ -342,24 +397,31 @@
     z-index: 1;
 }
 .planets-card::before {
-	background-color: #fff;
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #d0d0d06a;
+	z-index: 3;
 }
 .planets-card::after {
-	  background: url(../images/landing/clouds.png);
+	  background: url(../images/landing/clouds-1.jpg);
     background-size: cover;
-    -webkit-animation: move-left 30s linear infinite alternate;
-    animation: move-left 30s linear infinite alternate;
+    -webkit-animation: move-left 50s linear infinite alternate;
+    animation: move-left 50s linear infinite alternate;
 }
 .planetSwiper {
 	padding-bottom: 35px;
 }
 .planets-card:hover::before {
 	/* filter: brightness(1) invert(1); */
-	background-color: #2d2d2d;
+	/* background-color: #2d2d2d; */
 }
-.planets-card:hover .planets-desc {
+/* .planets-card:hover .planets-desc {
 	color: #fff;
-}
+} */
 .planets-img {
 	width: 155px;
 	text-align: center;
@@ -371,6 +433,7 @@
 	font-size: 24px;
 	font-weight: 800;
 	margin: 10px 0;
+	color: #131313;
 }
 .planet-detail {
 	display: -webkit-box;
@@ -378,6 +441,7 @@
 	-webkit-box-orient: vertical;  
 	overflow: hidden;
 	margin-bottom: 20px;
+	color: #131313;
 }
 .planets-desc {
 	text-align: center;
@@ -401,7 +465,7 @@
         background-position: 0%;
     }
 }
-/* 
+
 @keyframes move-background {
 	from {
 	  -webkit-transform: translate3d(0px, 0px, 0px);
@@ -443,7 +507,7 @@
   }
   
   .stars {
-	background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+	background: #0f0221 url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -456,20 +520,20 @@
   .twinkling {
 	width: 10000px;
 	height: 100%;
-	background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+	/* background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat; */
 	background-size: 1000px 1000px;
 	position: absolute;
 	right: 0;
 	top: 0;
 	bottom: 0;
 	z-index: 2;
-	-moz-animation: move-background 70s linear infinite;
-	-ms-animation: move-background 70s linear infinite;
-	-o-animation: move-background 70s linear infinite;
-	-webkit-animation: move-background 70s linear infinite;
-	animation: move-background 70s linear infinite;
+	-moz-animation: move-background 40s linear infinite;
+	-ms-animation: move-background 40s linear infinite;
+	-o-animation: move-background 40s linear infinite;
+	-webkit-animation: move-backgroun4 40s linear infinite;
+	animation: move-background 40s linear infinite;
   }
-  */
+ 
 
 .gem-section {
 	padding: 85px 0;
@@ -957,7 +1021,10 @@ address, .footer-div  {
   height: 35px;
   transition: all 0.3s ease;
 }
-
+.cta.color-white::before {
+	background-color: #5B0069;
+	width: 100%;
+}
 .cta span {
   position: relative;
   font-size: 14px;
@@ -965,7 +1032,9 @@ address, .footer-div  {
   letter-spacing: 0.05em;
   color: #234567;
 }
-
+.cta.color-white span {
+	color: #fff;
+}
 .cta svg {
   position: relative;
   top: 0;
@@ -977,6 +1046,9 @@ address, .footer-div  {
   stroke-width: 2;
   transform: translateX(-5px);
   transition: all 0.3s ease;
+}
+.cta.color-white svg {
+	stroke: #fff;
 }
 .cta:hover span {
 	color: #fff;
@@ -1006,7 +1078,7 @@ address, .footer-div  {
     margin-top: 20px;
 }
 .as_sign_box {
-    background-color: #8D00A3;
+    background-color: #5B0069;
     max-width: 200px;
     padding: 10px;
     position: relative;
@@ -1047,7 +1119,7 @@ address, .footer-div  {
     bottom: 0;
     border-top: 45px solid transparent;
     border-bottom: 48px solid transparent;
-    border-left: 20px solid #8D00A3;
+    border-left: 20px solid #5B0069;
 	transition:all 0.2s linear;
 } 
 
@@ -1055,7 +1127,7 @@ address, .footer-div  {
     left:auto;
     right: 100%;
     border-left: none;
-    border-right: 20px solid #8D00A3;
+    border-right: 20px solid #5B0069;
 	transition:all 0.2s linear;
 
 }
@@ -1083,17 +1155,18 @@ address, .footer-div  {
 }
 
 .as_sign_box:hover {
-	background-color: #5B0069;
+	/* background-color: #5B0069; */
+	background-color: #8D00A3;
 	transition:all 0.2s linear;
 }
 .as_sign_box:hover::after, .as_sign_box:hover:before {
 	border-top: 45px solid transparent;
 	border-bottom: 48px solid transparent;
-	border-left: 20px solid #5B0069;
+	border-left: 20px solid #8D00A3;
 	transition:all 0.2s linear;
 }
 .as_sign_box:hover::before {
-	border-right: 20px solid #5B0069;
+	border-right: 20px solid #8D00A3;
 	border-left: none;
 	transition:all 0.2s linear;
 }
@@ -1155,13 +1228,29 @@ address, .footer-div  {
 	padding: 55px 0;
 	position: relative;
 	overflow: hidden;
+	background-color: #0f0221;
+	
+}
+
+.horoscope-section::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-image: url('../images/landing/bg-options.jpg');
+	background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	animation: kenburns 25s ease-in-out infinite alternate;
+
 }
 .horoscope-heading {
 	margin-bottom: 30px;
 	text-align: center;
 }
-
-.horoscope-heading .horoscope-title, .const-title {
+.const-title {
 	font-size: 42px;
 	font-weight: 800;
 	color: #D20609;
@@ -1171,6 +1260,9 @@ address, .footer-div  {
 }
 .horoscope-heading .horoscope-title {
 	font-size: 58px;
+	color: #eaeaea;
+	font-weight: 800;
+
 }
 /* .horoscope-section::before {
 	content: "";
@@ -1216,45 +1308,18 @@ address, .footer-div  {
 	margin-bottom: 20px;
 	position: relative;
 	/* border: 1px solid #d6d6d6; */
-	transition: all ease-in-out 0.35s;
+	transition: all ease-in-out 0.75s;
 	border-radius: 12px;
 	overflow: hidden;
 	background-color: #fff;
 }
 
-.const-card::before {
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background-image: url('../images/landing/bg-star.jpg');
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	opacity: 0;
-	visibility: hidden;
-	transition: all ease-in-out 0.25s;
+
+.const-card:hover {
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+	transition: all ease-in-out 0.75s;
 }
 
-.const-card:hover::before {
-	opacity: 1;
-	visibility: visible;
-	transition: all ease-in-out 0.25s;
-}
-
-.const-card:hover .const-image::before {
-	border-color: #fff;
-	transition: all ease-in-out 0.35s;
-
-}
-
-.const-card:hover .const-name, .const-card:hover .const-info  {
-	color: #fff;
-	transition: all ease-in-out 0.35s;
-
-} 
 .const-card .full-link {
 	position: absolute;
 	width: 100%;
@@ -1273,21 +1338,95 @@ address, .footer-div  {
     position: relative;
     transition: all 0.3s linear;
 	margin-bottom: 15px;
+	border-radius: 50%;
+	transition: all ease-in-out 0.45s;
+	z-index: 6;
 }
 
 .const-image::before {
-	border: 1.2px dashed #173f59;
-    content: '';
-    position: absolute;
-    left: -10px;
-    top: -10px;
-    bottom: -10px;
-    right: -10px;
-    border-radius: 100%;
-	transition: all ease-in-out 0.35s;
-
-	
+	content: '';
+	position: absolute;
+	inset: -10px;
+	border-radius: 50%;
+	background: conic-gradient(
+		#5B0069 0deg 5deg,
+		transparent 5deg 10deg,
+		#D20609 10deg 15deg,
+		transparent 15deg 20deg,
+		#5B0069 20deg 25deg,
+		transparent 25deg 30deg,
+		#D20609 30deg 35deg,
+		transparent 35deg 40deg,
+		#5B0069 40deg 45deg,
+		transparent 45deg 50deg,
+		#D20609 50deg 55deg,
+		transparent 55deg 60deg,
+		#5B0069 60deg 65deg,
+		transparent 65deg 70deg,
+		#D20609 70deg 75deg,
+		transparent 75deg 80deg,
+		#5B0069 80deg 85deg,
+		transparent 85deg 90deg,
+		#D20609 90deg 95deg,
+		transparent 95deg 100deg,
+		#5B0069 100deg 105deg,
+		transparent 105deg 110deg,
+		#D20609 110deg 115deg,
+		transparent 115deg 120deg,
+		#5B0069 120deg 125deg,
+		transparent 125deg 130deg,
+		#D20609 130deg 135deg,
+		transparent 135deg 140deg,
+		#5B0069 140deg 145deg,
+		transparent 145deg 150deg,
+		#D20609 150deg 155deg,
+		transparent 155deg 160deg,
+		#5B0069 160deg 165deg,
+		transparent 165deg 170deg,
+		#D20609 170deg 175deg,
+		transparent 175deg 180deg,
+		#5B0069 180deg 185deg,
+		transparent 185deg 190deg,
+		#D20609 190deg 195deg,
+		transparent 195deg 200deg,
+		#5B0069 200deg 205deg,
+		transparent 205deg 210deg,
+		#D20609 210deg 215deg,
+		transparent 215deg 220deg,
+		#5B0069 220deg 225deg,
+		transparent 225deg 230deg,
+		#D20609 230deg 235deg,
+		transparent 235deg 240deg,
+		#5B0069 240deg 245deg,
+		transparent 245deg 250deg,
+		#D20609 250deg 255deg,
+		transparent 255deg 260deg,
+		#5B0069 260deg 265deg,
+		transparent 265deg 270deg,
+		#D20609 270deg 275deg,
+		transparent 275deg 280deg,
+		#5B0069 280deg 285deg,
+		transparent 285deg 290deg,
+		#D20609 290deg 295deg,
+		transparent 295deg 300deg,
+		#5B0069 300deg 305deg,
+		transparent 305deg 310deg,
+		#D20609 310deg 315deg,
+		transparent 315deg 320deg,
+		#5B0069 320deg 325deg,
+		transparent 325deg 330deg,
+		#D20609 330deg 335deg,
+		transparent 335deg 340deg,
+		#5B0069 340deg 345deg,
+		transparent 345deg 350deg,
+		#D20609 350deg 355deg,
+		transparent 355deg 360deg
+	);
+	mask: radial-gradient(farthest-side, transparent calc(100% - 3px), black 100%);
+	-webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 3px), black 100%);
+	z-index: 5;
 }
+
 .const-card:hover .const-image::before {
 	animation: spin 12s infinite linear;
     -webkit-animation: spin 12s infinite linear;
@@ -1298,6 +1437,13 @@ address, .footer-div  {
 	object-position: center;
 	object-fit: cover;
 	border-radius: 50%;
+	transition: all ease-in-out 0.45s;
+
+}
+
+.const-card:hover .const-image {
+	transform: scale(1.07);
+	transition: all ease-in-out 0.45s;
 }
 .const-name {
 	margin-top: 18px;
@@ -1366,7 +1512,7 @@ address, .footer-div  {
 	padding: 65px 0;
 	position: relative;
 }
-.testimonial-section::before {
+.testimonial-section::before, .gem-section::before {
 	content: '';
 	position: absolute;
 	width: 100%;
@@ -1377,7 +1523,7 @@ address, .footer-div  {
 	background-position: center;
 	background-size: 25%;
 	background-repeat: repeat;
-	opacity: 0.4;
+	opacity: 0.6;
 }
 .testi-card {
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
@@ -1385,6 +1531,10 @@ address, .footer-div  {
 	border-radius: 12px;
 	margin: 10px auto;
 	margin-left: 5px;
+	background-color: #fff;
+}
+
+.service-section.blogs .service-card {
 	background-color: #fff;
 }
 .testi-info {
@@ -1427,6 +1577,8 @@ address, .footer-div  {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 	text-align: center;
+	z-index: 4;
+	position: relative;
 }
 
 .country-image img {
@@ -1452,6 +1604,7 @@ address, .footer-div  {
 
 .country-section {
 	padding: 75px 0;
+	padding-bottom: 95px;
 	position: relative;
 	overflow: hidden;
 }
@@ -1560,28 +1713,72 @@ nav .btn .icon {
   overflow: hidden;
 }
 #sidebar-menu {
-	position: absolute;
+	position: fixed;
 	z-index: 99;
 	background-color: #fff;
-	min-width: 200px;
+	min-width: 270px;
 	left: 0;
+	top: 0;
+	height: 100vh;
 	/* border: 1px solid #000; */
 	/* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
 	/* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 	min-height: calc(100vh - 105px);
-	border-radius: 8px;
+	/* border-radius: 8px; */
 	transform: translateX(-100%);
 	opacity: 0;
 	visibility: hidden;
 	transition: all ease-in-out 0.45s;
 }
+
+#main-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999999;
+    background-color: rgba(0, 0, 0, 0.67);
+    overflow: hidden;
+    /* transform: translateX(100%); */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s ease-in-out;
+}
+
+#main-menu.show-main-menu {
+	    opacity: 1;
+    visibility: visible;
+    transition: all 0.6s ease-in-out;
+}
+
+.menu-close {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 0;
+	right: 0;
+	z-index: 2;
+	background-color: #5b0069;
+	color: #fff;
+	text-align: center;
+	line-height: 25px;
+	cursor: pointer;
+}
 #sidebar-menu.show-sidebar {
-	left: 10px;
+	/* left: 10px; */
 	transform: translateX(0);
 	opacity: 1;
 	visibility: visible;
 	transition: all ease-in-out 0.45s;
+}
+.sidebar-menu-logo img {
+	height: 75px;
+	margin-bottom: 10px;
+}
+.sub-menu-container .menu-item > .menu-link {
+	font-size: 14px;
 }
 #sidebar-menu a {
 	color: #000;
@@ -1638,6 +1835,22 @@ nav .btn .icon {
 	background-color: #fafafa;
 	position: relative;
 }
+.product-section::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-image: url('../images/landing/bg-moon.png');
+	background-position: center;
+	background-size: 25%;
+	background-repeat: repeat;
+	opacity: 0.6;
+}
+.bg-gray {
+	background-color: #fafafa;
+}
 
 .product-card {
 	border: 1px solid #d6d6d6;
@@ -1646,6 +1859,7 @@ nav .btn .icon {
 	margin-bottom: 10px;
 	position: relative;
 	overflow: hidden;
+	background-color: #fafafa;
 }
 
 .discount-tag {
@@ -1701,10 +1915,120 @@ nav .btn .icon {
 }
 
 .tab-d-none {
-		display: block;
-	}
+	display: block;
+}
+.parent-grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 15px;
+	grid-row-gap: 15px;
+}
+
+.div1-grid { grid-area: 1 / 1 / 2 / 2; }
+.div2-grid { grid-area: 1 / 2 / 2 / 3; }
+.div3-grid { grid-area: 1 / 3 / 2 / 4; }
+.div4-grid { grid-area: 1 / 4 / 2 / 5; }
+.div5-grid { grid-area: 1 / 5 / 2 / 6; }
+
+
+.service-card-box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+	border: 1px solid rgb(255 255 255 / 27%);
+	border-radius: 8px;
+	position: relative;
+	transition: all ease-in-out 0.35s;
+	margin-bottom: 25px;
+	position: relative;
+	z-index: 2;
+}
+
+.service-card-box:hover {
+	background-color: #5b0069;
+	border:  1px solid #5b0069;
+	transition: all ease-in-out 0.35s;
+}
+
+.card-service-info {
+	width: 75%;
+}
+.card-service-detail {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;  
+	overflow: hidden;
+	font-size: 16px;
+	width: 80%;
+}
+
+.card-service-name {
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.card-service-icon {
+	width: 25%;
+	text-align: center;
+}
+.bg-darkblue {
+	/* background-color: #0f0221; */
+	color: #fff;
+}
+
+
+.as_service_img {
+    position: relative;
+    text-align: center;
+}
+
+.as_service_img .as_service_img {
+    position: absolute;
+    left: -30px;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+    top: 20px;
+}
+
+.as_service_single .as_service_img:after {
+    display: none;
+}
+.as_service_img  .as_service_circle {
+    animation: spin 40s infinite linear;
+    -webkit-animation: spin 40s infinite linear;
+    -moz-animation: spin 40s infinite linear;
+    position: relative;
+    top: 100px;
+}
+
+.service-card-right .service-card-box {
+	flex-direction: row-reverse;
+	text-align: right;
+}
+
+.service-card-right  .card-service-detail {
+	margin-left: auto;
+}
+
+.d-sm-none {
+	display: block;
+}
 
 /* #sidebar-menu */
+
+
+@media only screen and (max-width: 1200px) {
+	.parent-grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.div5-grid {
+		display: none;
+	}
+}
 @media only screen and (max-width: 1150px) {
 	.menu-link {
 		padding-left: 10px;
@@ -1980,6 +2304,40 @@ nav .btn .icon {
 		padding-top: 35px;
 		padding-bottom: 35px;
 	}
+
+	.service-card-right .service-card-box {
+		flex-direction: row;
+	}
+	.service-card-right .service-card-box {
+		text-align: left;
+	}
+	.service-card-right .card-service-detail {
+		margin-left: 0;
+	}
+	.as_service_img .as_service_img {
+		position: relative;
+		top: 0;
+		left: 0;
+		margin: 25px 0;
+	}
+	.as_service_img .as_service_circle {
+		position: absolute;
+		left: 30%;
+	}
+
+	.parent-grid {
+		display: flex;
+		flex-wrap: wrap;
+		grid-column-gap: 0;
+		gap: 12px;
+	}
+
+	.div1-grid, .div2-grid, .div3-grid, .div4-grid, .div5-grid {
+		width: calc(33.33% - 12px);
+	}
+	.div4-grid {
+		display: none;
+	}
 }
 @media only screen and (max-width: 900px) {
 	.md-tab-none {
@@ -2050,7 +2408,7 @@ nav .btn .icon {
 	.counter-num {
 		font-size: 17px;
 	}
-	.d-sm-none {
+	.d-sm-no {
 		display: none;
 	}
 	.subscribe-widget {
@@ -2100,6 +2458,35 @@ nav .btn .icon {
 	.service-section {
 		padding-top: 55px;
 	}
+	.as_service_img .as_service_circle {
+		left: 6%;
+	}
+	.div1-grid, .div2-grid, .div3-grid, .div4-grid, .div5-grid {
+		width: 100%;
+	}
+	.planets-more {
+		display: none;
+	}
+	.planets-card {
+		margin-bottom: 10px;
+	}
+	.planet-heading, .service-heading {
+		margin-bottom: 45px;
+	}
+
+	.d-sm-none {
+		display: none;
+	}
+
+	.horoscope-heading .horoscope-title {
+		font-size: 44px;
+	}
+	.country-title.testi-header {
+		font-size: 34px;
+	}
+	.country-section, .service-section {
+	padding-bottom: 65px;
+}
 }
 @media only screen and (min-width: 1400px) {
 	#logo img {
@@ -2124,13 +2511,13 @@ nav .btn .icon {
 	padding-right: 0;
 }
 
-.stars {
+.stars-1 {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  transform: rotate(-35deg);
+  transform: rotate(-30deg);
 }
 
 .star {
