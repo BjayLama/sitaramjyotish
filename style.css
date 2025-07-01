@@ -20671,27 +20671,6 @@ body:not(.has-plugin-html5video) .video-wrap video {
   --cnvs-page-title-border-color: rgba(var(--cnvs-contrast-rgb), 0.1);
 }
 
-#page-title,
-.page-title {
-  --cnvs-page-title-padding: 4rem;
-  --cnvs-page-title-parallax-padding: 6.25rem;
-  --cnvs-page-title-mini-padding: 1.5rem;
-  --cnvs-page-title-bg: var(--cnvs-contrast-bg-offset);
-  --cnvs-page-title-color: var(--cnvs-contrast-900);
-  --cnvs-page-title-font-size: 2.25rem;
-  --cnvs-page-title-font-weight: 500;
-  --cnvs-page-title-spacing: 0;
-  --cnvs-page-title-subtitle-size: 1.125rem;
-  --cnvs-page-title-parallax-font-size: calc(2rem + 1vw);
-  --cnvs-page-title-parallax-subtitle-size: 1.25rem;
-  --cnvs-page-title-mini-size: 1.25rem;
-  --cnvs-page-title-border-color: rgba(var(--cnvs-contrast-rgb), 0.1);
-  --cnvs-page-title-center-mx-width: 48rem;
-  position: relative;
-  padding: var(--cnvs-page-title-padding) 0;
-  background-color: var(--cnvs-page-title-bg);
-  border-bottom: 1px solid var(--cnvs-page-title-border-color);
-}
 @media (max-width: 767.98px) {
   #page-title,
   .page-title {
