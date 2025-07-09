@@ -7,7 +7,9 @@
 #content {
 	overflow: hidden;
 }
-
+.breadcrumb a:hover {
+	color: #fff;
+}
 #nav-wrap {
 	background-color: #5b0069;
 }
@@ -148,7 +150,7 @@
 	padding: 75px 0;
 	overflow: hidden;
 }
-.planets-section::before {
+.planets-section::before, .planets-card-inner::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -162,10 +164,10 @@
 	background-repeat: repeat;
 	transform-origin: center;
 	animation: kenburns 45s ease-in-out infinite alternate;
-	/* animation: rotate 50s linear infinite; */
+  	/* animation: rotate 50s linear infinite; */
 }
 
-.planets-section::after {
+.planets-section::after, .planets-card-inner::after {
 	content: '';
 	position: absolute;
 	width: 100%;
@@ -1538,6 +1540,10 @@ address, .footer-div  {
 	background-repeat: repeat;
 	opacity: 0.6;
 }
+
+.gem-section.inner-gem::before {
+	background: none;
+}
 .testi-card {
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 	padding: 25px;
@@ -2034,6 +2040,19 @@ nav .btn .icon {
 .breadcrumb {
 	padding: 100px 0;
 	position: relative;
+	overflow: hidden;
+	background-color: #000;
+}
+
+.breadcrumb::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #000;
+	opacity: 0.5;
 }
 
 .breadcrumb-img {
@@ -2045,6 +2064,9 @@ nav .btn .icon {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	    animation: kenburns 50s ease-in-out infinite alternate;
+     /* animation: rotate 50s linear infinite; */
+
 }
 .breadcrumb-link {
 	position: relative;
@@ -2117,7 +2139,7 @@ nav .btn .icon {
 	padding-right: 35px;
 }
 .infos-title {
-	font-size: 38px;
+	font-size: 28px;
 	font-weight: 800;
 	line-height: 1.4;
 	margin-top: 10px;
@@ -2154,14 +2176,673 @@ nav .btn .icon {
 }
 
 
-
+.inner-section .about-intro {
+	padding-left: 0;
+}
+.about-section.inner-section {
+	padding: 55px 0;
+}
+/* .inner-section .about-title {
+	margin-bottom: 15px;
+} */
+.inner-section .about-desc p {
+	font-size: 18px;
+	line-height: 1.8;
+}
 .infos-cards {
 	padding: 20px;
 	border-radius: 14px;
-	border: 1px solid #d6d6d6;
+	/* border: 1px solid #d6d6d6; */
 	margin-bottom: 18px;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+.infos-icon {
+	width: 55px;
+	height: auto;
+	margin-right: 15px;
 }
 
+.infos-details .infos-label {
+	font-size: 16px;
+	font-weight: 600;
+	color: #3e3e3e;
+	margin-bottom: 5px;
+}
+
+.infos-details .infos-link {
+	font-size: 22px;
+	color: #4a4a4a;
+}
+
+.infos-details a {
+	color: #4a4a4a;
+}
+
+.infos-details a:hover {
+	color: #D20609;
+}
+
+
+.product-section.inner-product {
+	padding: 75px 0;
+}
+
+.inner-product .product-card {
+	margin-bottom: 30px;
+}
+
+.cards-dark .service-card-box {
+	background-color: #071461;
+	color: #fff;
+	transition: all ease-in-out 0.35s;
+}
+
+.cards-dark .service-card-box:hover {
+	background-color: #030a33;
+	color: #fff;
+	transition: all ease-in-out 0.35s;
+}
+
+
+.service-section.inner-service {
+	padding: 75px 0;
+}
+
+.inner-service .service-heading-title, .inner-gem .gemheading-title {
+	font-size: 48px;
+	color: #D20609;
+    background: -webkit-linear-gradient(#5B0069, #D20609);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -1px;
+	margin-bottom: 15px;
+}
+
+.inner-service .service-desc, .single-desc {
+	font-size: 19px;
+	line-height: 1.8;
+	margin-bottom: 30px;
+	color: #070707;
+	overflow: initial;
+	line-clamp: none;
+	display: block;
+	width: 85%;
+	margin: 0 auto;
+	margin-bottom: 60px;
+	text-align: justify;
+}
+ .inner-gem .gemheading-desc, .inner-planets .planet-desc  {
+	font-size: 19px;
+	line-height: 1.8;
+	margin-bottom: 30px;
+ 	overflow: initial;
+	line-clamp: none;
+	display: block;
+	margin-bottom: 60px;
+	text-align: justify;
+	color: #070707;
+}
+.service-single .single-desc {
+	margin-bottom: 15px;
+}
+.service-single {
+	padding: 75px 0;
+	position: relative;
+}
+
+.service-single-img, .planets-inner-cards {
+	float: left;
+	margin-right: 25px;
+	margin-bottom: 25px;
+}
+
+.planets-inner-cards {
+	margin-top: 35px;
+	margin-right: 45px;
+}
+.planets-inner-cards .planets-img {
+	width: 350px;
+	height: 370px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.service-single-img img {
+	width: 400px;
+}
+
+.desc-text {
+	padding-top: 35px;
+}
+
+.related-services {
+	padding: 75px 0;
+	position: relative;
+}
+.related-services-title, .inner-planets .planet-title {
+	font-size: 48px;
+	font-weight: 800;
+	color: #D20609;
+	background: -webkit-linear-gradient(#5B0069, #D20609);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.planets-card-inner {
+	position: relative;
+	overflow: hidden !important;
+	padding: 35px;
+	border-radius: 16px;
+	margin-bottom: 25px;
+}
+
+
+.planets-card-inner-img {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 2;
+	text-align: center;
+	margin: auto;
+	border: 45px solid transparent;
+    border-image: url(https://www.jyotishnepal.com.np/frontend/img/files/planet-b.png) 130 stretch;
+	padding: 10px;
+    border-radius: 8px;
+}
+.planets-card-inner-img img {
+	width: 260px;
+	text-align: center;
+}
+.sec-card-gem {
+	padding: 35px 25px;
+	border-radius: 1px solid #d6d6d6;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+	border-radius: 12px;
+	margin-bottom: 25px;
+	background-color: #fff;
+}
+
+.planets-inner-infos, .inner-tops {
+	position: relative;
+	z-index: 2;
+	color: #fff;
+}
+.inner-tops {
+	border-bottom: 1.5px solid #727272;
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+}
+.planet-inner-name {
+	color: #fff;
+	font-size: 30px;
+}
+.planet-temp, .planet-ruler, .planet-fall, .horo-ruling, .horo-ele, .horo-symbol  {
+	font-size: 20px;
+}
+.services-lists .planets-card::after, .services-lists .planets-card::before {
+	display: none;
+}
+
+.services-lists .planets-card .planets-img { 
+	width: 190px;
+}
+.services-lists .planets-card {
+	/* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+	/* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+	box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+	/* background-color: #fafafa; */
+	margin-top: 7px;
+}
+
+.services-lists .planets-card .planet-detail {
+	-webkit-line-clamp: 2;
+}
+.planet-inner-desc {
+	font-size: 18px;
+	line-height: 1.6;
+	display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.sec-card-gem .gem-img {
+	position: relative;
+	border: 40px solid transparent;
+	border-image: url(../images/landing/gem-frame.png) 95 stretch;
+	background-color: #fff;
+}
+
+/* .gem-img::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-image: url(../images/landing/gem-frame.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left center;
+	opacity: 0.5;
+} */
+
+.sec-card-gem .gem-img img {
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+}
+
+.sec-card-gem .gem-detail {
+	padding-left: 25px;
+}
+
+.gem-detail .gem-name {
+	font-size: 26px;
+	font-weight: 800;
+	margin-bottom: 5px;
+}
+
+.gem-detail .gem-effect, .gem-detail .gem-horo {
+	font-size: 18px;
+	margin-bottom: 3px;
+}
+.gem-detail .gem-effect strong, .gem-detail .gem-horo strong {
+	font-size: 20px;
+}
+
+.gem-info-text {
+	margin-top: 5px;
+	display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  font-size: 17px;
+}
+
+.gem-info-link {
+	margin-top: 15px;
+}
+.gemRelatedSwiper .btn {
+	transform: scale(0.9);
+	transform-origin: center;
+}
+
+.gemRelatedSwiper .service-info {
+	padding: 15px 25px;
+	padding-top: 20px;
+}
+.planets-section.inner-planets {
+	background-color: #fafafa;
+}
+.planets-section.inner-planets::before {
+	background-image: url(../images/landing/bg-moon.png);
+	background-size: 20%;
+	background-repeat: repeat;
+	opacity: 0.6;
+}
+.planets-section.inner-planets::after {
+	display: none;
+}
+
+
+.appointment-sec {
+	padding: 75px 0;
+	background-color: #f7f7f7;
+}
+
+.appointment-form {
+	background-color: #fff;
+	border-radius: 12px;
+}
+
+.appointment-steps {
+	background-color: #071461;
+	color: #fff;
+	position: relative;
+	border-radius: 12px;
+}
+
+.appointment-steps::before {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-image: url(../images/landing/about-bg.png);
+	background-size: 50%;
+	background-repeat: repeat;
+	background-position: center;
+}
+
+
+.steps-info {
+	padding: 15px;
+	font-size: 18px;
+	border-bottom: 1px solid #d6d6d652;
+}
+
+
+.ap-form-sec {
+	padding: 30px;
+}
+
+.ap-form-title, .inner-horoscope .horoscope-heading .horoscope-title, .horo-name {
+	font-size: 32px;
+    font-weight: 800;
+    color: #D20609;
+    background: -webkit-linear-gradient(#5B0069, #D20609);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 4;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.horo-name {
+	font-size: 26px;
+}
+.horoscope-heading {
+	padding-top: 35px;
+}
+.inner-horoscope .horoscope-heading .horoscope-title {
+	text-align: left;
+	font-size: 42px;
+}
+
+.horoscope-heading .horoscope-subcontent {
+	text-align: left;
+	font-size: 18px;
+}
+
+.horoscope-section.inner-horoscope {
+	background-color: #fff;
+	overflow: initial;
+}
+.horoscope-section.inner-horoscope::before {
+	background-image: url(../images/landing/about-bg.png);
+	background-size: 20%;
+	background-repeat: repeat;
+	opacity: 0.22;
+	animation: none;
+	/* display: none; */
+}
+
+.horoscope-wrapper {
+	padding: 35px;
+	background-color: #fff;
+	border-radius: 16px;
+	border: 1px solid #d6d6d6;
+	/* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; */
+	position: relative;
+	overflow: hidden;
+	transition: all ease-in-out 0.35s;
+	margin-bottom: 30px;
+}
+.span-block {
+	display: block;
+	font-size: 20px;
+	margin-bottom: 8px;
+}
+.star-container {
+	opacity: 0;
+	visibility: hidden;
+	transition: all ease-in-out 0.35s;
+}
+
+.horoscope-wrapper:hover .star-container {
+	opacity: 1;
+	visibility: visible;
+	transition: all ease-in-out 0.35s;
+}
+
+.horoscope-wrapper:hover .horo-name {
+	color: #fff;
+}
+
+.horoscope-icons {
+	padding: 15px;
+    border-right: 1px solid #eaeaea;
+    border: 35px solid transparent;
+    border-image: url(../images/landing/horo-frame.png) 90 round;
+}
+
+.horoscope-icons img {
+	filter:  invert(1) brightness(0);
+	transition: all ease-in-out 0.35s;
+}
+
+
+.horoscope-wrapper:hover .horoscope-icons img {
+	filter: none;
+	transition: all ease-in-out 0.35s;
+}
+
+.horoscope-wrapper:hover  {
+	color: #fff;
+	transition: all ease-in-out 0.35s;
+}
+
+.horo-detail {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;  
+	overflow: hidden;
+	font-size: 18px;
+}
+.horo-heading {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #d6d6d6;
+	margin-bottom: 15px;
+}
+
+.horo-btn {
+	margin-top: 20px;
+}
+.sticky-round {
+	position: sticky;
+	top: 105px;
+	overflow: hidden;
+	padding-top: 55px;
+}
+
+.overflow-in, #content.overflow-in, #wrapper.overflow-in {
+	overflow: initial;
+}
+
+.horo-left-sec {
+	padding-right: 75px;
+}
+
+.inner-constellations .const-name, .inner-lists .const-name {
+	font-size: 24px;
+}
+.inner-lists .const-name {
+	margin-bottom: 0;
+}
+.inner-constellations .const-info {
+	display: block;
+    overflow: initial;
+	font-size: 18px;
+}
+
+
+.const-btn {
+	margin-top: 12px;
+}
+.inner-heading .const-title {
+	margin-bottom: 10px;
+}
+.inner-heading .const-desc, .inner-lists .const-info {
+	display: block;
+	font-size: 20px;
+	line-height: 1.8;
+}
+
+.inner-lists .info-list, .inner-lists .const-info {
+	padding-bottom: 0;
+	font-size: 19px;
+}
+.style-span {
+	display: inline-block;
+    width: 225px;
+	position: relative;
+	color: #2860ab;
+	margin-bottom: 12px;
+}
+.style-span::before {
+	content: "";
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    z-index: 0;
+    width: 200px;
+    height: 1px;
+    background-color: #d7d7d7;
+}
+
+.info-list {
+	padding-bottom: 5px;
+}
+.const-single-img {
+	    border: 38px solid transparent;
+    border-image: url(../images/landing/const-frame.png) 250 stretch;
+	margin-top: 25px;
+}
+
+.nav-tabs {
+	background-color: #fff;
+}
+
+.nav-tabs button {
+	color: #000;
+	font-weight: 500;
+}
+.tab-content {
+	padding: 25px;
+	background-color: #fff;
+}
+
+.about-image {
+	position: relative;
+	border-radius: 24px;
+	overflow: hidden;
+}
+
+.about-me .about-image::before {
+	content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(../images/landing/bg-working.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	/* z-index: -1; */
+}
+
+.about-image img {
+	position: relative;
+	z-index: 2;
+	height: 445px;
+
+}
+.about-me {
+	padding-bottom: 75px;
+}
+
+.about-text {
+	padding-right: 35px;
+	padding-left: 35px;
+}
+
+.about-text .about-desc {
+	font-size: 18px;
+}
+.social-icons {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+.social-icons li {
+    display: inline-block;
+    margin: -1px 1px 0 0;
+    padding: 0;
+    border-radius: 100%;
+    overflow: visible;
+}
+.social-icons.social-icons-big li a, .social-icons.social-icons-lg li a {
+    height: 48px;
+    line-height: 50px;
+    width: 48px;
+	margin-right: 10px;
+}
+
+.social-icons li a img {
+    height: 32px;
+    width: 32px;
+}
+.social-icons.social-icons-big li a i,
+.social-icons.social-icons-lg li a i {
+    color: #fff !important;
+}
+.rounded-social-buttons .fa-twitter,
+.fa-facebook-f,
+.fa-linkedin,
+.fa-youtube,
+.fa-instagram {
+    font-size: 16px;
+}
+.social-icons:not(.social-icons-opacity-light):not(
+        .social-icons-transparent
+    ):not(.social-icons-clean):not(.social-icons-clean-with-border):not(
+        .social-icons-dark
+    ):not(.social-icons-dark-2):not(.custom-social-icons)
+    li {
+    box-shadow: none;
+}
+.facebook {
+    background-color: #1877f2 !important;
+}
+.instagram {
+    background-color: #c13584 !important;
+}
+.youtube {
+    background-color: #ff0000 !important;
+}
+.tiktok {
+    background-color: #000 !important;
+}
+.threads {
+    background-color: #f56040 !important;
+}
+
+
+.blog-single-img {
+	float: none;
+	width: 100%;
+	height: 350px;
+	border-radius: 16px;
+	overflow: hidden;
+} 
+.service-single-img.blog-single-img img {
+	width: 100%;
+}
+
+
+.constSingleSwiper .const-card {
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+}
 @media only screen and (max-width: 1200px) {
 	.parent-grid {
 		grid-template-columns: repeat(4, 1fr);
@@ -2170,6 +2851,15 @@ nav .btn .icon {
 	.div5-grid {
 		display: none;
 	}
+	.about-image img {
+		height: auto;
+		margin-top: 35px;
+	}
+	    .about-title.about-name-t {
+			font-size: 32px;
+			margin-bottom: 8px;
+		}
+
 }
 @media only screen and (max-width: 1150px) {
 	.menu-link {
@@ -2256,6 +2946,39 @@ nav .btn .icon {
 	.div8 { grid-area: 2 / 4 / 3 / 5; } */
 }
 @media only screen and (max-width: 992px) {
+
+	.info-card-wrapper {
+		display: flex;
+		gap: 7px;
+
+	}
+
+	.planets-card.planets-inner-cards {
+		width: 70%;
+		margin-left: auto;
+		float: none;
+		margin-right: auto;
+	}
+
+	.service-single-img.planets-img {
+		float: none;
+	}
+.contact-infos {
+	padding-right: 0;
+	margin-top: 35px;
+}
+
+.sec-card-gem .gem-detail {
+	padding-left: 0;
+	padding-top: 20px;
+}
+	.info-card-wrapper .infos-cards {
+		flex-direction: column;
+		text-align: center;
+		border: 1px solid #d6d6d6;
+		width: calc(33.33% - 7px);
+	}
+
 	.as_sign_box:after, .as_sign_box:before {
 		display: none;
 	}
@@ -2321,6 +3044,15 @@ nav .btn .icon {
 		-webkit-line-clamp: 3;
 		-webkit-box-orient: vertical;  
 		overflow: hidden;
+	}
+
+	.about-me .about-image {
+		margin-bottom: 35px;
+	}
+
+	.about-section.inner-section .about-desc, .about-me .about-desc {
+		display: block;
+		overflow: initial;
 	}
 	.planet-subtitle {
 		display: -webkit-box;
@@ -2480,6 +3212,32 @@ nav .btn .icon {
 	.div4-grid {
 		display: none;
 	}
+
+	.blog-single-img {
+		height: auto;
+	}
+
+	.desc-text {
+		padding-top: 20px;
+	}
+
+
+	.const-single-img, .horo-single-img, .inner-service-img {
+		float: none;
+		width: 65%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 0;
+	}
+
+	.horo-left-sec {
+		padding-right: 15px;
+	}
+
+	.planets-card-inner-img {
+		margin-bottom: 25px;
+	}
+
 }
 @media only screen and (max-width: 900px) {
 	.md-tab-none {
@@ -2488,6 +3246,55 @@ nav .btn .icon {
 }
 
 @media only screen and (max-width: 650px) {
+	.planets-card.planets-inner-cards, .service-single-img.planets-img img, .service-single-img.planets-img  {
+		width: 100%;
+	}
+
+.infos-title {
+	font-size: 22px;
+}
+.contact-form {
+	padding: 30px 15px;
+}
+.contact-title, .inner-horoscope .horoscope-heading .horoscope-title {
+	font-size: 28px;
+}
+.horoscope-heading .horoscope-subcontent {
+	text-align: justify;
+}
+.sec-card-gem {
+	padding: 20px 10px;
+}
+
+
+.horo-info {
+	margin-top: 10px;
+}
+.inner-service .service-heading-title, .inner-gem .gemheading-title {
+	font-size: 34px;
+}
+	.info-card-wrapper {
+		flex-direction: column;
+	}
+	
+	.info-card-wrapper .infos-cards {
+		width: 100%;
+	}
+	.const-single-img {
+		float: none;
+		width: 100%;
+	}
+	.page-title {
+		font-size: 28px;
+		margin-top: 5px;
+	}
+
+	.related-services-title {
+		font-size: 36px;
+	}
+	.service-single .single-desc {
+		width: 100%;
+	}
 	.about-intro {
 		text-align: center;
 		margin-bottom: 35px;
@@ -2639,6 +3446,21 @@ nav .btn .icon {
 	}
 	.as_service_img .as_service_img {
 		margin-right: 15px;
+	}
+	.about-section.inner-section .about-intro {
+		padding-right: 0;
+	}
+	.about-section.inner-section .about-desc, .about-me .about-desc {
+		text-align: justify;
+	}
+
+	.about-text {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.about-title.about-name-t {
+		font-size: 30px;
 	}
 }
 @media only screen and (min-width: 1400px) {
@@ -2953,3 +3775,7 @@ nav .btn .icon {
 #footer a:hover {
 	color: #5b0069;
 }
+
+
+
+/* Solar System Styles */
