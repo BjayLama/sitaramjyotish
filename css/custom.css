@@ -270,7 +270,7 @@
 	gap: 20px;
 	border-radius: 100px 100px 100px 100px;
 }
-.about-title {
+.about-title, .yatra-title {
 	font-size: 58px;
 	font-weight: 800;
 	color: #D20609;
@@ -2496,44 +2496,35 @@ nav .btn .icon {
 	background-color: #f7f7f7;
 }
 
-.appointment-form {
+/* .appointment-form {
 	background-color: #fff;
 	border-radius: 12px;
-}
+} */
 
 .appointment-steps {
-	background-color: #071461;
-	color: #fff;
 	position: relative;
-	border-radius: 12px;
 }
-
-.appointment-steps::before {
-	position: absolute;
-	content: '';
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background-image: url(../images/landing/about-bg.png);
-	background-size: 50%;
-	background-repeat: repeat;
-	background-position: center;
-}
-
-
 .steps-info {
-	padding: 15px;
+		display: flex;
+	position: relative;
+	z-index: 2;
+	padding: 15px 20px;
 	font-size: 18px;
 	border-bottom: 1px solid #d6d6d652;
+	margin-bottom: 5px;
 }
 
 
 .ap-form-sec {
-	padding: 30px;
+	padding: 20px 45px;
+	border-left: 1px solid #d6d6d6;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
 }
 
-.ap-form-title, .inner-horoscope .horoscope-heading .horoscope-title, .horo-name {
+.ap-form-title, .inner-horoscope .horoscope-heading .horoscope-title, .horo-name, .form-heading-title {
 	font-size: 32px;
     font-weight: 800;
     color: #D20609;
@@ -2843,6 +2834,778 @@ nav .btn .icon {
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 
 }
+
+ .yatra-title {
+	font-size: 38px;
+}
+.gotra-desc p {
+	margin-bottom: 0;
+}
+.gotra-table {
+	margin-top: 25px;
+	font-size: 18px;
+}
+.gotra-table table {
+	border-radius: 12px;
+	overflow: hidden;
+}
+.gotra-table table thead {
+    background-color: #5b0069;
+    color: #fff;
+}
+ .gotra-table table thead tr th {
+    background-color: transparent;
+    color: #fff;
+	padding: 15px 17px;
+	font-size: 20px;
+}
+.gotra-table table td {
+	padding: 15px;
+}
+
+.gem-single {
+	padding: 85px 0;
+	position: relative;
+}
+.gemSingleSwiper {
+	/* background-color: #fafafa; */
+	padding: 25px;
+	border-radius: 16px;
+	border: 1px solid #d6d6d6;
+}
+.gemSingleSwiper  .swiper-slide .gemsingle-img {
+	padding: 10px;
+	border-right: 1px solid #d6d6d6;
+}
+
+.gemsingle-content {
+	margin-top: 55px;
+}
+.span-flex {
+	display: flex;
+	align-items: center;
+}
+.rich-img {
+	width: 30px;
+}
+
+.gemsingle-content p {
+	font-size: 20px;
+}
+.product-details {
+	padding-top: 30px;
+	margin-bottom: 15px;
+}
+.product-details .p-name, .bar-form-title {
+	font-size: 52px;
+	font-weight: 600;
+	color: #D20609;
+    background: -webkit-linear-gradient(#5B0069, #D20609);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bar-form-title {
+	font-size: 42px;
+	margin-bottom: 0px;
+}
+
+.bar-heading {
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.bar-form-desc {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.p-price {
+	font-size: 22px;
+	font-weight: 600;
+}
+.p-price del {
+	color: #4a4a4a;
+	font-size: 16px;
+	margin-right: 7px;
+}
+
+.product-info {
+	font-size: 18px;
+}
+
+.d-tag {
+	background-color: #5b0069;
+	display: inline-block;
+	font-size: 14px;
+	color: #fff;
+	border-radius: 8px;
+	padding: 5px 10px;
+	margin-left: 7px;
+}
+
+.p-weight {
+	margin-top: 15px;
+}
+.p-weight .w-tag {
+	border: 1px solid #5b0069;
+	color: #fff;
+	border-radius: 8px;
+	padding: 5px 10px;
+	margin-left: 7px;
+	background-color: #5b0069;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+	opacity: 1;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.product-info {
+	margin-bottom: 20px;
+}
+
+.psingle-sliders, .singles-product {
+	background-color: #fff;
+	padding: 25px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	border-radius: 12px;
+}
+
+.psingle-sliders {
+	box-shadow: none;
+	border: 1px solid #d6d6d6;
+}
+
+.pSingleSwiper-thumb {
+	margin-bottom: 10px;
+}
+.pSingleSwiper-thumb .swiper-slide {
+	opacity: 0.45;
+	height: 110px;
+	border-radius: 8px;
+	border: 1px solid #d6d6d6;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+.pSingleSwiper-thumb .swiper-slide-thumb-active {
+	opacity: 1;
+}
+
+/* .swiper-button-next, .swiper-button-prev {
+	top: 55%;
+	left: -8px;
+	z-index: 4;
+	width: 35px;
+	height: 35px;
+	border-radius: 10px;
+} */
+
+.product-single-infos {
+	padding-left: 40px;
+	padding-right: 25px;
+}
+
+.product-info p {
+	margin-bottom: 5px;
+}
+
+/* .swiper-button-next {
+	left: auto;
+	right: -8px;
+} */
+
+
+.product-single-tabs {
+	margin-top: 45px;
+	padding: 30px;
+	background-color: #fff;
+}
+
+.bar-badu-form {
+	padding: 85px 0;
+}
+
+.form-sec-height {
+	min-height: 750px;
+}
+
+.has-bg {
+	background-color: #ffffff;
+	padding: 35px;
+	border-radius: 16px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	position: absolute !important;
+	top: 0;
+	left: 0;
+	z-index: 4;
+}
+
+.ap-form-style {
+	position: absolute;
+	top: 0;
+	left: 45px;
+	width: 95%;
+	height: 100%;
+	z-index: 2;
+	transition: all ease-in-out 0.5s;
+
+}
+
+.form-sec-height {
+	height: 100%;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.first-form, .ap-form-step-1 {
+	transition: all ease-in-out 0.65s;
+	transition-property: opacity;
+
+}
+
+.female-submit {
+	margin-left: auto;
+	text-align: end;
+}
+.sec-form, .re-first-form.first-form, .ap-form-step-2, .ap-form-step-3, .ap-form-step-4, .ap-form-step-5, .ap-form-step-6, .ap-form-step-7 {
+	transform: translateX(100%);
+	/* transform: scale(0.5); */
+	z-index: -1;
+	opacity: 0;
+	visibility: hidden;
+	transition: all ease-in-out 0.65s;
+	transition-property: opacity;
+}
+
+.ap-form-style.hide-steps {
+	transform: translateX(-100%);
+	/* transform: scale(0.5); */
+	z-index: -1;
+	opacity: 0;
+	visibility: hidden;
+	transition: all ease-in-out 0.65s;
+	transition-property: opacity;
+
+}
+.re-first-form.first-form {
+	transform: translateX(-100%);
+	/* transform: scale(0.5); */
+}
+
+.show-sec-form.sec-form, .show-steps {
+	transform: translateX(0%);
+	/* transform: scale(1); */
+	z-index: 1;
+	opacity: 1;
+	visibility: visible;
+	transition: all ease-in-out 0.65s;
+	transition-property: opacity;
+
+	/* transition-delay: 0.25s; */
+}
+.has-border {
+	border-right: 1px solid #d6d6d6;
+}
+
+.has-style-form {
+	padding: 0 30px;
+}
+
+.product-single-tabs .tab-content p {
+	font-size: 18px;
+}
+.nav-tabs .nav-link {
+	font-size: 20px;
+	font-weight: 600;
+	padding: 7px 22px;
+	transition: all ease-in-out 0.3s;
+} 
+.nav-tabs .nav-link.active {
+	background-color: #5B0069;
+	color: #fff;
+	transition: all ease-in-out 0.3s;
+}
+/* Appointement PAGE CSS */
+.form-heading {
+	margin-bottom: 40px;
+}
+.form-heading-title {
+	font-size: 42px;
+}
+
+.form-heading-desc {
+	font-size: 20px;
+}
+
+.appointment-form {
+	background-color: #fff;
+	padding: 35px;
+	border-radius: 16px;
+	position: relative;
+	overflow: hidden;
+}
+
+.appointment-element {
+	position: absolute;
+	bottom: -250px;
+	left: auto;
+	right: -150px;
+	width: 555px;
+	opacity: 0.45;
+		animation: spin 22s infinite linear;
+	-webkit-animation: spin 22s infinite linear;
+
+}
+.steps-count {
+	position: relative;
+}
+
+.steps-count::before {
+	content: '';
+	position: absolute;
+	width: 4px;
+    height: 90%;
+    top: 21px;
+    left: 40px;
+    background-color: #030a33;
+    z-index: 1;	
+}
+
+
+
+
+.steps-info .steps-num {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 45px;
+	background-color: #fff;
+	margin-right: 15px;
+	border: 1px solid #030a33;
+	color: #030a33;
+	transition: all ease-in-out 0.5s;
+}
+.steps-info.active-step {
+	color: #2860ab;
+}
+.steps-info .steps-name {
+	font-weight: 800;
+	font-size: 20px;
+}
+.sel-service-icon {
+	width: 30%;
+	text-align: center;
+}
+.steps-info .short-desc {
+	font-size: 15px;
+	line-height: 1.2;
+	margin-top: 4px;
+} 
+.steps-info.active-step .steps-num {
+	background-color: #030a33;
+	color: #fff;
+	transition: all ease-in-out 0.5s;
+}
+.steps-info.complete-step .steps-num {
+	background-color: greenyellow;
+	border-color: greenyellow;
+	transition: all ease-in-out 0.5s;
+	position: relative;
+}
+.steps-info .steps-num .num {
+	display: block;
+}
+.steps-info.complete-step .steps-num .num {
+	display: none;
+}
+.steps-info.complete-step .steps-num::before {
+	content: "\f00c"; /* check icon */
+	position: absolute;
+	top: 0;
+	left: 13px;
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900; /* solid icons */
+	font-size: 18px;
+}
+.steps-detail {
+	width: calc(100% - 60px);
+	margin-top: 3px;
+}
+
+.ap-form-heading {
+	margin-bottom: 25px;
+}
+
+.ap-form-desc {
+	font-size: 18px;
+}
+
+.select-service-card {
+	display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+    border: 1px solid #5b0069;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 2;
+	height: 100%;
+    align-items: center;
+	transition: all ease-in-out 0.35s;
+
+}
+.sel-service-title {
+	font-size: 18px;
+	font-weight: 600;
+	color: #5b0069;
+	line-height: 1;
+	margin-bottom: 5px;
+}
+.sel-service-time {
+	font-weight: 600;
+	font-size: 15px;
+	color: #4a4a4a;
+}
+.service-sel-list {
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+}
+.service-sel-list li {
+	width: calc(33% - 15px);
+    margin-right: 15px;
+    margin-bottom: 15px;
+	list-style-type: none;
+	position: relative;
+	transition: all ease-in-out 0.35s;
+	border-radius: 12px;
+}
+
+.service-sel-list li:hover {
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	transition: all ease-in-out 0.35s;
+}
+
+.service-sel-list li:hover .select-service-card {
+	background-color: #5b0069;
+	transition: all ease-in-out 0.35s;
+	color: #fff;
+}
+.service-sel-list li:hover .select-service-card .sel-service-title,
+.service-sel-list li:hover .select-service-card .sel-service-time
+ {
+	transition: all ease-in-out 0.35s;
+	color: #fff;
+}
+
+.service-sel-list li input:checked ~ label i {
+	opacity: 1;
+	transition: all ease-in-out 0.35s;
+}
+.service-sel-list li label i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 0;
+    color: #fff;
+    opacity: 0;
+	font-size: 20px;
+	transition: all ease-in-out 0.35s;
+}
+.sel-service-infos {
+	width: 70%;
+}
+.service-sel-list li input:checked ~ .select-service-card .sel-service-title,
+.service-sel-list li input:checked ~ .select-service-card .sel-service-time  {
+	opacity: 1;
+	color: #fff;
+	transition: all ease-in-out 0.35s;
+}
+.service-sel-list li input:checked ~ .select-service-card {
+	background-color: #5b0069;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	margin-top: -10px;
+	transition: all ease-in-out 0.35s;
+}
+
+.appFormSwiper .swiper-slide {
+	background-color: #fff;
+	height: 100%;
+}
+
+
+/* NEW INPUT CSS */
+.input-select {
+ position: relative;
+
+}
+
+.ml-auto {
+	text-align: end;
+	margin-left: auto;
+}
+.ap-form-step-4 .input-select, .ap-form-step-5 .input-select {
+	margin-bottom: 35px
+}
+.ap-form-step-4 .input-select.top-label, .ap-form-step-5 .input-select.top-label {
+	margin-top: 7px;
+}
+.input-select .input {
+ font-size: 16px;
+ padding: 10px 10px 10px 5px;
+ display: block;
+ width: 100%;
+ border: none;
+ border-bottom: 1px solid #515151;
+ background-color: transparent;
+}
+.selected-service .service-sel-list  li {
+	width: 50%;
+}
+
+.infos-service p {
+	margin-bottom: 0px;
+	line-height: 1.4;
+}
+
+.infos-service h5 {
+	margin-bottom: 8px;
+	font-size: 22px;
+}
+.input-select .input:focus {
+ outline: none;
+}
+.pay-sec {
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+		border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+	position: sticky;
+}
+.pay-sec .pay-heading {
+	background-color: #5b0069;
+	color: #fff;
+	padding: 10px 15px;
+	font-size: 22px;
+	font-weight: 600;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+.pay-sec .pay-body {
+	padding: 20px;
+	background-color: #fff;
+		border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+}
+
+.pay-sec ul {
+	list-style-type: none;
+}
+.pay-sec ul li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 3px;
+	font-size: 18px;
+}
+.input-select label {
+ color: #999;
+ font-size: 18px;
+ font-weight: normal;
+ position: absolute;
+ pointer-events: none;
+ left: 5px;
+ top: 10px;
+ transition: 0.2s ease all;
+ -moz-transition: 0.2s ease all;
+ -webkit-transition: 0.2s ease all;
+}
+.input-select.top-label label {
+	top: -20px;
+	font-size: 14px;
+	color: #5b0069;
+}
+.input-select .input:focus ~ label, .input-select .input:valid ~ label {
+ top: -20px;
+ font-size: 18px;
+ color: #5b0069;
+ font-weight: 800;
+}
+
+.input-select .bar {
+ position: relative;
+ display: block;
+ width: 100%;
+}
+.bar-badu-form .input-select {
+	margin-top: 35px;
+}
+.input-select .bar:before, .input-select .bar:after {
+ content: '';
+ height: 2px;
+ width: 0;
+ bottom: 1px;
+ position: absolute;
+ background: #5b0069;
+ transition: 0.2s ease all;
+ -moz-transition: 0.2s ease all;
+ -webkit-transition: 0.2s ease all;
+}
+
+.input-select .bar:before {
+ left: 50%;
+}
+
+.input-select .bar:after {
+ right: 50%;
+}
+
+.input-select .input:focus ~ .bar:before, .input:focus ~ .bar:after {
+ width: 50%;
+}
+
+.input-select .highlight {
+ position: absolute;
+ height: 60%;
+ width: 100px;
+ top: 25%;
+ left: 0;
+ pointer-events: none;
+ opacity: 0.5;
+}
+
+.input-select .input:focus ~ .highlight {
+ animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+ from {
+  background: #5b0069;
+ }
+
+ to {
+  width: 0;
+  background: transparent;
+ }
+}
+
+.h-100 {
+	height: 100% !important;
+}
+.mantra-card {
+	background-color: #fff;
+	padding: 25px 15px;
+	padding-bottom: 10px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	border-radius: 12px;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+.mantra-inner::before {
+	background-image: url(../images/landing/mantra-bgi-bg.png);
+	opacity: 0.3;
+}
+
+.matra-card:hover {
+	background-color: #000;
+}
+.mantra-card .bg-image {
+	position: relative;
+}
+.mantra-card .bg-image::before {
+	content: '';
+	position: absolute;
+    width: 116%;
+    height: 125%;
+    top: -10px;
+    left: -15px;
+	animation: spin 22s infinite linear;
+	-webkit-animation: spin 22s infinite linear;
+	opacity: 0.65;
+	background-image: url(../images/landing/mantra-bg-2.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+.mantra-card .bg-image img {
+	position: relative;
+	z-index: 2;
+}
+
+.mantra-detail {
+	text-align: center;
+}
+
+.modal-header {
+	background-color: #5b0069;
+}
+
+.modal-header h1 {
+	color: #fff !important;
+}
+ .modal-header .btn-close {
+	filter: brightness(0) invert(1);
+}
+
+
+.mantra-detail p strong {
+	font-size: 20px;
+}
+.text-2 {
+	font-size: 20px;
+}
+.astro-list .sel-service-icon {
+	overflow: hidden;
+	padding: 10px;
+	height: 75px;
+}
+.astro-list .sel-service-icon img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+/* Payment CSS */
+.pay-label {
+	text-align: center;
+	width: 100%;
+}
+
+.pay-label .sel-service-infos {
+	width: 100%;
+}
+.pay-label img {
+	height: 45px;
+	margin-bottom: 15px;
+}
+.info-div {
+	margin-bottom: 15px;
+}
+
+.card-pay-info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #fff;
+	border-radius: 12px;
+	padding: 25px 45px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	margin-bottom: 25px;
+}
+
+.info-qr img {
+	height: 155px;
+}
+.card-name {
+	font-weight: 600;
+	font-size: 22px;
+}
 @media only screen and (max-width: 1200px) {
 	.parent-grid {
 		grid-template-columns: repeat(4, 1fr);
@@ -2859,9 +3622,42 @@ nav .btn .icon {
 			font-size: 32px;
 			margin-bottom: 8px;
 		}
+		.mantra-card .bg-image::before {
+			left: -9px;
+		}
 
 }
 @media only screen and (max-width: 1150px) {
+
+	/* Added CSS */
+	.appointment-form {
+		padding: 35px 15px;
+	}
+	.steps-count::before {
+		left: 16px;
+	}
+	.steps-info {
+		padding: 15px 0;
+		margin-bottom: 5px;
+	}
+	.steps-info .steps-num {
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+		margin-right: 10px;
+	}
+	.steps-info .steps-name {
+		font-size: 18px;
+	}
+	.steps-info.complete-step .steps-num::before {
+		left: 10px;
+	}
+	.service-sel-list li {
+		width: calc(50% - 15px);
+	}
+
+
+
 	.menu-link {
 		padding-left: 10px;
 		padding-right: 7px;
@@ -2951,6 +3747,16 @@ nav .btn .icon {
 		display: flex;
 		gap: 7px;
 
+	}
+	.has-bg {
+		padding: 20px;
+	}
+
+	.bar-form-desc {
+		width: 100%;
+	}
+	.bar-form-title {
+		font-size: 36px;
 	}
 
 	.planets-card.planets-inner-cards {
@@ -3237,17 +4043,37 @@ nav .btn .icon {
 	.planets-card-inner-img {
 		margin-bottom: 25px;
 	}
+	.gotra-page .about-title {
+		font-size: 28px;
+	}
+}
 
+@media only screen and (max-width: 991.9px) {
+	.first-form, .ap-form-step-1 {
+		position: relative;
+		left: 0;
+	}
+	.ap-form-style, .first-form, .ap-form-step-1 {
+		top: 25px;
+		width: 100%;
+	}
 }
 @media only screen and (max-width: 900px) {
 	.md-tab-none {
 		display: none;
 	}
 }
-
+@media only screen and (max-width: 768px) {
+	.form-sec-height {
+		min-height: 960px;
+	}
+}
 @media only screen and (max-width: 650px) {
 	.planets-card.planets-inner-cards, .service-single-img.planets-img img, .service-single-img.planets-img  {
 		width: 100%;
+	}
+	.mantra-card .bg-image::before {
+		left: -25px;
 	}
 
 .infos-title {
@@ -3775,7 +4601,75 @@ nav .btn .icon {
 #footer a:hover {
 	color: #5b0069;
 }
+.select2-container .select2-selection--single {
+	height: 48px;
+}
 
+@media only screen and (max-width:600px) {
+	.select2-container .select2-selection--single {
+		height: 40px;
+		margin-bottom: 15px;
+	}
+
+	.select2-container--default .select2-selection--single .select2-selection__rendered {
+		line-height: 20px;
+	}
+}
 
 
 /* Solar System Styles */
+.button {
+  line-height: 1;
+  text-decoration: none;
+  display: inline-flex;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #5b0069;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 0.3s;
+}
+
+.button__icon-wrapper {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  color: #000;
+  background-color: #fff;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.button:hover {
+  background-color: #071461;
+}
+
+.button:hover .button__icon-wrapper {
+  color: #000;
+}
+
+.button__icon-svg--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.button:hover .button__icon-svg:first-child {
+  transition: transform 0.3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.button:hover .button__icon-svg--copy {
+  transition: transform 0.3s ease-in-out 0.1s;
+  transform: translate(0);
+}
