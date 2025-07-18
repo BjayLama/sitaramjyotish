@@ -3054,7 +3054,20 @@ nav .btn .icon {
 	height: 100%;
 	z-index: 2;
 	transition: all ease-in-out 0.5s;
+}
 
+.appointment-form::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	background-image: url(../images/landing/bg2.png);
+	background-position: top center;
+	background-size: 25%;
+	background-repeat: repeat;
+	height: 100%;
+	top: 0;
+    left: 0;
+    opacity: 0.4;
 }
 
 .form-sec-height {
@@ -3080,7 +3093,7 @@ nav .btn .icon {
 	opacity: 0;
 	visibility: hidden;
 	transition: all ease-in-out 0.65s;
-	transition-property: opacity;
+	transition-property: all;
 }
 
 .ap-form-style.hide-steps {
@@ -3090,7 +3103,7 @@ nav .btn .icon {
 	opacity: 0;
 	visibility: hidden;
 	transition: all ease-in-out 0.65s;
-	transition-property: opacity;
+	transition-property: all;
 
 }
 .re-first-form.first-form {
@@ -3105,7 +3118,7 @@ nav .btn .icon {
 	opacity: 1;
 	visibility: visible;
 	transition: all ease-in-out 0.65s;
-	transition-property: opacity;
+	transition-property: all;
 
 	/* transition-delay: 0.25s; */
 }
@@ -3260,6 +3273,7 @@ nav .btn .icon {
 	height: 100%;
     align-items: center;
 	transition: all ease-in-out 0.35s;
+	background-color: #fff;
 
 }
 .sel-service-title {
@@ -3769,10 +3783,10 @@ nav .btn .icon {
 	.service-single-img.planets-img {
 		float: none;
 	}
-.contact-infos {
-	padding-right: 0;
-	margin-top: 35px;
-}
+	.contact-infos {
+		padding-right: 0;
+		margin-top: 35px;
+	}
 
 .sec-card-gem .gem-detail {
 	padding-left: 0;
@@ -4046,6 +4060,11 @@ nav .btn .icon {
 	.gotra-page .about-title {
 		font-size: 28px;
 	}
+
+	.ap-form-sec {
+		padding: 20px;
+		border-left: none;
+	}
 }
 
 @media only screen and (max-width: 991.9px) {
@@ -4055,6 +4074,14 @@ nav .btn .icon {
 	}
 	.ap-form-style, .first-form, .ap-form-step-1 {
 		top: 25px;
+		width: 100%;
+	}
+	.show-sec-form.sec-form, .show-steps {
+		left: 0;
+		top: 0;
+	}
+
+	.ap-form-step-6 .selected-service .service-sel-list li {
 		width: 100%;
 	}
 }
@@ -4076,29 +4103,29 @@ nav .btn .icon {
 		left: -25px;
 	}
 
-.infos-title {
-	font-size: 22px;
-}
-.contact-form {
-	padding: 30px 15px;
-}
-.contact-title, .inner-horoscope .horoscope-heading .horoscope-title {
-	font-size: 28px;
-}
-.horoscope-heading .horoscope-subcontent {
-	text-align: justify;
-}
-.sec-card-gem {
-	padding: 20px 10px;
-}
+	.infos-title {
+		font-size: 22px;
+	}
+	.contact-form {
+		padding: 30px 15px;
+	}
+	.contact-title, .inner-horoscope .horoscope-heading .horoscope-title {
+		font-size: 28px;
+	}
+	.horoscope-heading .horoscope-subcontent {
+		text-align: justify;
+	}
+	.sec-card-gem {
+		padding: 20px 10px;
+	}
 
 
-.horo-info {
-	margin-top: 10px;
-}
-.inner-service .service-heading-title, .inner-gem .gemheading-title {
-	font-size: 34px;
-}
+	.horo-info {
+		margin-top: 10px;
+	}
+	.inner-service .service-heading-title, .inner-gem .gemheading-title {
+		font-size: 34px;
+	}
 	.info-card-wrapper {
 		flex-direction: column;
 	}
@@ -4287,6 +4314,13 @@ nav .btn .icon {
 
 	.about-title.about-name-t {
 		font-size: 30px;
+	}
+
+	.service-sel-list li {
+		width: 100%;
+	}
+	.ap-from-step-7 .service-sel-list li {
+		width: 50%;
 	}
 }
 @media only screen and (min-width: 1400px) {
@@ -4604,7 +4638,9 @@ nav .btn .icon {
 .select2-container .select2-selection--single {
 	height: 48px;
 }
-
+	.ap-form-step-2 .input-select {
+		margin-bottom: 45px;
+	}
 @media only screen and (max-width:600px) {
 	.select2-container .select2-selection--single {
 		height: 40px;
@@ -4613,6 +4649,33 @@ nav .btn .icon {
 
 	.select2-container--default .select2-selection--single .select2-selection__rendered {
 		line-height: 20px;
+	}
+
+	.form-heading-title {
+		font-size: 26px;
+	}
+	.ap-form-sec {
+		padding: 0px;
+		border-left: none;
+	}
+
+
+
+	.ap-form-title {
+		font-size: 24px;
+	}
+	.pay-sec {
+		margin-top: 40px;
+	}
+	.card-pay-info {
+		flex-direction: column-reverse;
+	}
+
+	.ap-form-step-7 .service-sel-list li{
+		width: calc(50% - 15px);
+	}
+	.pay-label img {
+		height: 35px;
 	}
 }
 
@@ -4672,4 +4735,24 @@ nav .btn .icon {
 .button:hover .button__icon-svg--copy {
   transition: transform 0.3s ease-in-out 0.1s;
   transform: translate(0);
+}
+
+
+.btn-danger {
+	background-image: none;
+}
+
+.btn-danger:hover {
+	color: #fff;
+	background-color: #dc3545;
+}
+.btn-blue {
+	background-color: #2860ab;
+	background-image: none;
+	color: #fff;
+}
+
+.btn-blue:hover {
+	background-color: #2860ab;
+	color: #fff;
 }
