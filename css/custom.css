@@ -3620,6 +3620,19 @@ nav .btn .icon {
 	font-weight: 600;
 	font-size: 22px;
 }
+
+.singles-product .swiper-button-next, .singles-product .swiper-button-prev {
+	bottom: 40%;
+	top: auto;
+	left: -6px;
+	right: auto;
+	
+}
+.singles-product .swiper-button-next {
+	right: -6px;
+	left: auto;
+}
+
 @media only screen and (max-width: 1200px) {
 	.parent-grid {
 		grid-template-columns: repeat(4, 1fr);
@@ -4322,6 +4335,15 @@ nav .btn .icon {
 	.ap-from-step-7 .service-sel-list li {
 		width: 50%;
 	}
+	.singles-product .swiper-button-next, .singles-product .swiper-button-prev {
+		left: 4px;
+		right: auto;
+		
+	}
+	.singles-product .swiper-button-next {
+		right: 4px;
+		left: auto;
+}
 }
 @media only screen and (min-width: 1400px) {
 	#logo img {
