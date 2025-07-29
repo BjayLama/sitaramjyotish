@@ -596,7 +596,7 @@
 .div9 { grid-area: 2 / 4 / 3 / 5; }
 .div10 { grid-area: 2 / 5 / 3 / 6; }
 
-.gemheading-title {
+.gemheading-title, .dream-title {
 	font-size: 46px;
 	font-weight: 800;
 	margin-bottom: 6px;
@@ -1849,12 +1849,12 @@ nav .btn .icon {
 	border-bottom: none;
 }
 
-.product-section {
+.product-section, .dreams-section {
 	padding: 75px 0;
 	background-color: #fafafa;
 	position: relative;
 }
-.product-section::before {
+.product-section::before, .dreams-section::before {
 	content: '';
 	position: absolute;
 	width: 100%;
@@ -2250,7 +2250,7 @@ nav .btn .icon {
 	padding: 75px 0;
 }
 
-.inner-service .service-heading-title, .inner-gem .gemheading-title {
+.inner-service .service-heading-title, .inner-gem .gemheading-title, .dream-title {
 	font-size: 48px;
 	color: #D20609;
     background: -webkit-linear-gradient(#5B0069, #D20609);
@@ -2273,7 +2273,7 @@ nav .btn .icon {
 	margin-bottom: 60px;
 	text-align: justify;
 }
- .inner-gem .gemheading-desc, .inner-planets .planet-desc  {
+ .inner-gem .gemheading-desc, .inner-planets .planet-desc, .dream-desc  {
 	font-size: 19px;
 	line-height: 1.8;
 	margin-bottom: 30px;
@@ -3054,7 +3054,20 @@ nav .btn .icon {
 	height: 100%;
 	z-index: 2;
 	transition: all ease-in-out 0.5s;
+}
 
+.appointment-form::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	background-image: url(../images/landing/bg2.png);
+	background-position: top center;
+	background-size: 25%;
+	background-repeat: repeat;
+	height: 100%;
+	top: 0;
+    left: 0;
+    opacity: 0.4;
 }
 
 .form-sec-height {
@@ -3080,7 +3093,7 @@ nav .btn .icon {
 	opacity: 0;
 	visibility: hidden;
 	transition: all ease-in-out 0.65s;
-	transition-property: opacity;
+	transition-property: all;
 }
 
 .ap-form-style.hide-steps {
@@ -3090,7 +3103,7 @@ nav .btn .icon {
 	opacity: 0;
 	visibility: hidden;
 	transition: all ease-in-out 0.65s;
-	transition-property: opacity;
+	transition-property: all;
 
 }
 .re-first-form.first-form {
@@ -3105,7 +3118,7 @@ nav .btn .icon {
 	opacity: 1;
 	visibility: visible;
 	transition: all ease-in-out 0.65s;
-	transition-property: opacity;
+	transition-property: all;
 
 	/* transition-delay: 0.25s; */
 }
@@ -3260,6 +3273,7 @@ nav .btn .icon {
 	height: 100%;
     align-items: center;
 	transition: all ease-in-out 0.35s;
+	background-color: #fff;
 
 }
 .sel-service-title {
@@ -3606,6 +3620,19 @@ nav .btn .icon {
 	font-weight: 600;
 	font-size: 22px;
 }
+
+.singles-product .swiper-button-next, .singles-product .swiper-button-prev {
+	bottom: 40%;
+	top: auto;
+	left: -6px;
+	right: auto;
+	
+}
+.singles-product .swiper-button-next {
+	right: -6px;
+	left: auto;
+}
+
 @media only screen and (max-width: 1200px) {
 	.parent-grid {
 		grid-template-columns: repeat(4, 1fr);
@@ -3769,10 +3796,10 @@ nav .btn .icon {
 	.service-single-img.planets-img {
 		float: none;
 	}
-.contact-infos {
-	padding-right: 0;
-	margin-top: 35px;
-}
+	.contact-infos {
+		padding-right: 0;
+		margin-top: 35px;
+	}
 
 .sec-card-gem .gem-detail {
 	padding-left: 0;
@@ -4046,6 +4073,11 @@ nav .btn .icon {
 	.gotra-page .about-title {
 		font-size: 28px;
 	}
+
+	.ap-form-sec {
+		padding: 20px;
+		border-left: none;
+	}
 }
 
 @media only screen and (max-width: 991.9px) {
@@ -4055,6 +4087,14 @@ nav .btn .icon {
 	}
 	.ap-form-style, .first-form, .ap-form-step-1 {
 		top: 25px;
+		width: 100%;
+	}
+	.show-sec-form.sec-form, .show-steps {
+		left: 0;
+		top: 0;
+	}
+
+	.ap-form-step-6 .selected-service .service-sel-list li {
 		width: 100%;
 	}
 }
@@ -4076,29 +4116,29 @@ nav .btn .icon {
 		left: -25px;
 	}
 
-.infos-title {
-	font-size: 22px;
-}
-.contact-form {
-	padding: 30px 15px;
-}
-.contact-title, .inner-horoscope .horoscope-heading .horoscope-title {
-	font-size: 28px;
-}
-.horoscope-heading .horoscope-subcontent {
-	text-align: justify;
-}
-.sec-card-gem {
-	padding: 20px 10px;
-}
+	.infos-title {
+		font-size: 22px;
+	}
+	.contact-form {
+		padding: 30px 15px;
+	}
+	.contact-title, .inner-horoscope .horoscope-heading .horoscope-title {
+		font-size: 28px;
+	}
+	.horoscope-heading .horoscope-subcontent {
+		text-align: justify;
+	}
+	.sec-card-gem {
+		padding: 20px 10px;
+	}
 
 
-.horo-info {
-	margin-top: 10px;
-}
-.inner-service .service-heading-title, .inner-gem .gemheading-title {
-	font-size: 34px;
-}
+	.horo-info {
+		margin-top: 10px;
+	}
+	.inner-service .service-heading-title, .inner-gem .gemheading-title {
+		font-size: 34px;
+	}
 	.info-card-wrapper {
 		flex-direction: column;
 	}
@@ -4288,6 +4328,22 @@ nav .btn .icon {
 	.about-title.about-name-t {
 		font-size: 30px;
 	}
+
+	.service-sel-list li {
+		width: 100%;
+	}
+	.ap-from-step-7 .service-sel-list li {
+		width: 50%;
+	}
+	.singles-product .swiper-button-next, .singles-product .swiper-button-prev {
+		left: 4px;
+		right: auto;
+		
+	}
+	.singles-product .swiper-button-next {
+		right: 4px;
+		left: auto;
+}
 }
 @media only screen and (min-width: 1400px) {
 	#logo img {
@@ -4604,7 +4660,9 @@ nav .btn .icon {
 .select2-container .select2-selection--single {
 	height: 48px;
 }
-
+	.ap-form-step-2 .input-select {
+		margin-bottom: 45px;
+	}
 @media only screen and (max-width:600px) {
 	.select2-container .select2-selection--single {
 		height: 40px;
@@ -4613,6 +4671,33 @@ nav .btn .icon {
 
 	.select2-container--default .select2-selection--single .select2-selection__rendered {
 		line-height: 20px;
+	}
+
+	.form-heading-title {
+		font-size: 26px;
+	}
+	.ap-form-sec {
+		padding: 0px;
+		border-left: none;
+	}
+
+
+
+	.ap-form-title {
+		font-size: 24px;
+	}
+	.pay-sec {
+		margin-top: 40px;
+	}
+	.card-pay-info {
+		flex-direction: column-reverse;
+	}
+
+	.ap-form-step-7 .service-sel-list li{
+		width: calc(50% - 15px);
+	}
+	.pay-label img {
+		height: 35px;
 	}
 }
 
@@ -4672,4 +4757,333 @@ nav .btn .icon {
 .button:hover .button__icon-svg--copy {
   transition: transform 0.3s ease-in-out 0.1s;
   transform: translate(0);
+}
+
+
+.btn-danger {
+	background-image: none;
+}
+
+.btn-danger:hover {
+	color: #fff;
+	background-color: #dc3545;
+}
+.btn-blue {
+	background-color: #2860ab;
+	background-image: none;
+	color: #fff;
+}
+
+.btn-blue:hover {
+	background-color: #2860ab;
+	color: #fff;
+}
+
+
+
+/* Added CSS After */
+
+.dream-heading {
+	position: relative;
+	z-index: 2;
+}
+.dream-box {
+	padding: 40px;
+	background-color: #fff;
+	border-radius: 16px;
+	margin-top: 30px;
+}
+.swiper-slide button {
+    background: transparent;
+    border-radius: 0;
+    border: 1px solid #eaeaea;
+    transition: none;
+    width: 50px;
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+	background-color: #fff;
+}
+.dream-pagination {
+	position: relative;
+}
+.dream-pagination .swiper-button-next, .dream-pagination .swiper-button-prev {
+	border-radius: 0;
+    left: auto;
+    right: -45px;
+    top: 22px;
+    bottom: auto;
+    width: 40px;
+    height: 45px;
+}
+.dream-pagination .swiper-button-prev {
+	left: -45px;
+	right: auto;
+}
+
+.dream-pagination .swiper-button-next:after, .dream-pagination .swiper-button-prev:after {
+	font-size: 14px;
+}
+.dream-pagination .swiper-slide-thumb-active button {
+	background-color: #5b0069;
+	color: #fff;
+}
+
+.dream-box span {
+	color: #5b0069;
+}
+.swiper-slide button:hover {
+	color: #fff;
+}
+.mylink {
+    position: fixed;
+    right: -100px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 9999;
+    -webkit-transition: 0.4s linear;
+    transition: 0.4s linear;
+}
+
+.mylink .connect-us {
+    background: #ececec;
+    width: 120px;
+    height: 300px;
+    position: relative;
+}
+
+.mylink .show-menu {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #2b4c9d;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    z-index: 99;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.mylink .show-menu:hover {
+    cursor: pointer;
+}
+
+.mylink .connect-us h6 {
+    position: absolute;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    width: 300px;
+    height: 25px;
+    top: 100%;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    padding: 3px;
+    color: #ffffff;
+	left: -5px;
+}
+
+.mylink .connect-us .call-number {
+    position: absolute;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    width: 300px;
+    height: 60px;
+    top: 100%;
+    left: 20px;
+    color: #ffffff;
+    background: #ed1821;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px 0;
+}
+.mylink .connect-us .call-number a {
+    color: #fff;
+    font-size: 16px;
+}
+.mylink .connect-us .social-number {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.mylink .connect-us1 {
+    background: #ececec;
+    width: 120px;
+    height: 200px;
+    position: relative;
+}
+
+.mylink .connect-us1:before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+    z-index: 99999;
+}
+
+.mylink .connect-us1 h6 {
+    position: absolute;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    width: 200px;
+    height: 20px;
+    top: 100%;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.85rem;
+    padding: 3px 0;
+    color: #ffffff;
+}
+
+.mylink .connect-us1 .call-number {
+    position: absolute;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    width: 200px;
+    height: 80px;
+    top: 100%;
+    color: #ffffff;
+    background: #ff1a5c;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.show-connect {
+    right: 0;
+    position: fixed;
+}
+.connect-us img {
+    width: 24px;
+    height: 24px;
+}
+
+.dreambox-swiper-title {
+	font-size: 24px;
+	margin-top: 25px;
+	color: #4a4a4a;
+}
+.bg-purple {
+	background-color: #5b0069;
+}
+#caret {
+	background-color: #5b0069;
+    position: absolute;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    left: -24px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.85rem;
+    padding: 3px 0;
+    color: #ffffff;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+}
+/* .bg-gradient-new {
+	background: linear-gradient(to right, #5b0069 0%, #C5070A 51%, #5b0069 100%)
+} */
+
+ .landing-circle {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	bottom: 20px;
+	left: auto;
+	right: 0;
+	opacity: 0.35;
+	z-index: 4;
+	 animation: spin 25s infinite linear;
+    -webkit-animation: spin 25s infinite linear;
+}
+ .landing-circle-big {
+	position: absolute;
+	width: 500px;
+	height: 500px;
+    bottom: -35%;
+    left: -14%;
+	opacity: 0.35;
+	z-index: 4;
+	 animation: spin 25s infinite linear;
+    -webkit-animation: spin 25s infinite linear;
+}
+.background-image-land {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	top: 0;
+	left: 0;
+	animation: kenburns 45s ease-in-out infinite alternate;
+}
+.landing-wrapper .stars {
+	background: transparent url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+	animation: kenburns 45s ease-in-out infinite alternate;
+
+}
+@media only screen and (max-width: 768px) {
+	.dream-pagination .swiper-button-next, .dream-pagination .swiper-button-prev {
+		display: none;
+	}
+	.dream-box {
+		padding: 20px;
+	}
+}
+@media only screen and (max-width: 600px) {
+    .mylink {
+        right: -125px;
+    }
+	.mylink.show-connect {
+        right: 0;
+    }
+	.landing-circle {
+		display: none;
+	}
+	.landing-circle-big {
+		position: absolute;
+		width: 445px;
+		height: 445px;
+		left: -10%;
+	}
+	.image-new-try {
+		width: 312px;
+		top: 35%;
+		left: 55%;
+	}
+	.background-image-land {
+		background-position: right;
+	}
+
 }
