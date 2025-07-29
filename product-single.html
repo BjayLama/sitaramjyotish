@@ -1439,9 +1439,23 @@
         var swiper = new Swiper(".pSingleSwiper-thumb", {
             loop: true,
             spaceBetween: 10,
-            slidesPerView: 3,
+            slidesPerView: 2,
             freeMode: true,
             watchSlidesProgress: true,
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+            },
         });
         var swiper2 = new Swiper(".pSingleSwiper", {
             loop: true,

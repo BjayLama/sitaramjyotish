@@ -3122,6 +3122,8 @@ nav .btn .icon {
 
 	/* transition-delay: 0.25s; */
 }
+
+
 .has-border {
 	border-right: 1px solid #d6d6d6;
 }
@@ -4078,9 +4080,19 @@ nav .btn .icon {
 		padding: 20px;
 		border-left: none;
 	}
+	.pay-sec ul li.small-flex {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+	}
+	.pay-sec ul li.small-flex div.btn {
+		width: 100%;
+		text-align: center !important;
+	}
 }
 
-@media only screen and (max-width: 991.9px) {
+@media only screen and (max-width: 1024px) {
 	.first-form, .ap-form-step-1 {
 		position: relative;
 		left: 0;
@@ -4088,6 +4100,7 @@ nav .btn .icon {
 	.ap-form-style, .first-form, .ap-form-step-1 {
 		top: 25px;
 		width: 100%;
+		min-height: 85vh;
 	}
 	.show-sec-form.sec-form, .show-steps {
 		left: 0;
@@ -5084,6 +5097,10 @@ nav .btn .icon {
 	}
 	.background-image-land {
 		background-position: right;
+	}
+	.product-single-infos, .tab-content {
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 }
