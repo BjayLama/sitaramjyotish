@@ -39,7 +39,9 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- Font Icons -->
-    <link rel="stylesheet" href="css/font-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"
         integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -797,7 +799,7 @@
                                 <div class="col-lg-9">
 
                                     <div class="ap-form-sec">
-                                        <div class="ap-form-style ap-form-step-1">
+                                        <div id="step-1" class="ap-form-style ap-form-step-1">
                                             <form action="" class="h-100">
                                                 <div class="ap-form-heading">
                                                     <div class="ap-form-title">तपाईंले बुक गर्न चाहनुभएको सेवा
@@ -993,7 +995,7 @@
                                             </form>
                                         </div>
 
-                                        <div class="ap-form-style ap-form-step-2">
+                                        <div id="step-2" class="ap-form-style ap-form-step-2">
                                             <form action="" class="h-100">
                                                 <div class="ap-form-heading mb-5">
                                                     <div class="ap-form-title">
@@ -1031,7 +1033,7 @@
                                                 </div>
                                             </form>
                                         </div>
-                                        <div class="ap-form-style ap-form-step-3">
+                                        <div id="step-3" class="ap-form-style ap-form-step-3">
                                             <form action="" class="h-100">
                                                 <div class="ap-form-heading">
                                                     <div class="ap-form-title">तपाईंले बुक गर्न चाहनुभएको सेवा
@@ -1130,7 +1132,7 @@
                                                 </div>
                                             </form>
                                         </div>
-                                        <div class="ap-form-style ap-form-step-4">
+                                        <div id="step-4" class="ap-form-style ap-form-step-4">
                                             <form action="" class="h-100">
                                                 <div class="ap-form-heading mb-5">
                                                     <div class="ap-form-title">
@@ -1222,7 +1224,7 @@
                                                 </div>
                                             </form>
                                         </div>
-                                        <div class="ap-form-style ap-form-step-5">
+                                        <div id="step-5" class="ap-form-style ap-form-step-5">
                                             <form action="" class="h-100">
                                                 <div class="ap-form-heading mb-5">
                                                     <div class="ap-form-title">
@@ -1311,7 +1313,7 @@
                                                 </div>
                                             </form>
                                         </div>
-                                        <div class="ap-form-style ap-form-step-6">
+                                        <div id="step-6" class="ap-form-style ap-form-step-6">
                                             <form action="" class="h-100">
                                                 <div class="ap-form-heading mb-5">
                                                     <div class="ap-form-title">
@@ -1483,7 +1485,7 @@
                                                 </div>
                                             </form>
                                         </div>
-                                        <div class="ap-form-style ap-form-step-7">
+                                        <div id="step-7" class="ap-form-style ap-form-step-7">
                                             <form action="" class="h-100">
                                                 <div class="ap-form-heading mb-5">
                                                     <div class="ap-form-title">
@@ -2127,6 +2129,17 @@
 
             $(".steps-" + current).removeClass("active-step").addClass("complete-step");
             $(".steps-" + next).addClass("active-step");
+
+
+            // Scroll to the next step's top
+            setTimeout(() => {
+                const target = $("#step-" + next);
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - 180
+                    }, 600);
+                }
+            }, 100); // Delay to ensure visibility
         }
 
         function goBackToStep(current, prev) {
@@ -2136,6 +2149,16 @@
             $(".steps-" + current).removeClass("active-step");
             $(".steps-" + prev).removeClass("complete-step");
             $(".steps-" + prev).addClass("active-step");
+
+            // Scroll to the previous step's top
+            setTimeout(() => {
+                const target = $("#step-" + prev);
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - 180
+                    }, 600);
+                }
+            }, 100);
         }
 
         // Forward step buttons

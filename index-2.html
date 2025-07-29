@@ -41,7 +41,9 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- Font Icons -->
-    <link rel="stylesheet" href="css/font-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
@@ -342,6 +344,10 @@
                 width: 100%;
                 font-size: 18px;
                 margin-top: 10px;
+            }
+
+            .image-new-try {
+                width: 350px;
             }
         }
     </style>
@@ -4074,6 +4080,12 @@
                 $('#header').removeClass("attatched");
             }
         });
+        $(".mylink h6").on('click', function (e) {
+            $(".mylink").toggleClass("show-connect")
+        })
+        $("#caret").on('click', function (e) {
+            $(".mylink").toggleClass("show-connect")
+        })
     </script>
 
 
