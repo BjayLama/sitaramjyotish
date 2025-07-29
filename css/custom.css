@@ -3067,19 +3067,6 @@ nav .btn .icon {
 	height: 100%;
 	top: 0;
     left: 0;
-    opacity: 0.4;}
-
-.appointment-form::before {
-	content: '';
-	position: absolute;
-	width: 100%;
-	background-image: url(../images/landing/bg2.png);
-	background-position: top center;
-	background-size: 25%;
-	background-repeat: repeat;
-	height: 100%;
-	top: 0;
-    left: 0;
     opacity: 0.4;
 }
 
@@ -4088,6 +4075,21 @@ nav .btn .icon {
 	.gotra-page .about-title {
 		font-size: 28px;
 	}
+
+	.ap-form-sec {
+		padding: 20px;
+		border-left: none;
+	}
+	.pay-sec ul li.small-flex {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+	}
+	.pay-sec ul li.small-flex div.btn {
+		width: 100%;
+		text-align: center !important;
+	}
 }
 
 @media only screen and (max-width: 1024px) {
@@ -4099,14 +4101,6 @@ nav .btn .icon {
 		top: 25px;
 		width: 100%;
 		min-height: 85vh;
-	}
-	.show-sec-form.sec-form, .show-steps {
-		left: 0;
-		top: 0;
-	}
-
-	.ap-form-step-6 .selected-service .service-sel-list li {
-		width: 100%;
 	}
 	.show-sec-form.sec-form, .show-steps {
 		left: 0;
@@ -4776,4 +4770,337 @@ nav .btn .icon {
 .button:hover .button__icon-svg--copy {
   transition: transform 0.3s ease-in-out 0.1s;
   transform: translate(0);
+}
+
+
+.btn-danger {
+	background-image: none;
+}
+
+.btn-danger:hover {
+	color: #fff;
+	background-color: #dc3545;
+}
+.btn-blue {
+	background-color: #2860ab;
+	background-image: none;
+	color: #fff;
+}
+
+.btn-blue:hover {
+	background-color: #2860ab;
+	color: #fff;
+}
+
+
+
+/* Added CSS After */
+
+.dream-heading {
+	position: relative;
+	z-index: 2;
+}
+.dream-box {
+	padding: 40px;
+	background-color: #fff;
+	border-radius: 16px;
+	margin-top: 30px;
+}
+.swiper-slide button {
+    background: transparent;
+    border-radius: 0;
+    border: 1px solid #eaeaea;
+    transition: none;
+    width: 50px;
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+	background-color: #fff;
+}
+.dream-pagination {
+	position: relative;
+}
+.dream-pagination .swiper-button-next, .dream-pagination .swiper-button-prev {
+	border-radius: 0;
+    left: auto;
+    right: -45px;
+    top: 22px;
+    bottom: auto;
+    width: 40px;
+    height: 45px;
+}
+.dream-pagination .swiper-button-prev {
+	left: -45px;
+	right: auto;
+}
+
+.dream-pagination .swiper-button-next:after, .dream-pagination .swiper-button-prev:after {
+	font-size: 14px;
+}
+.dream-pagination .swiper-slide-thumb-active button {
+	background-color: #5b0069;
+	color: #fff;
+}
+
+.dream-box span {
+	color: #5b0069;
+}
+.swiper-slide button:hover {
+	color: #fff;
+}
+.mylink {
+    position: fixed;
+    right: -100px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 9999;
+    -webkit-transition: 0.4s linear;
+    transition: 0.4s linear;
+}
+
+.mylink .connect-us {
+    background: #ececec;
+    width: 120px;
+    height: 300px;
+    position: relative;
+}
+
+.mylink .show-menu {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #2b4c9d;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    z-index: 99;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.mylink .show-menu:hover {
+    cursor: pointer;
+}
+
+.mylink .connect-us h6 {
+    position: absolute;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    width: 300px;
+    height: 25px;
+    top: 100%;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    padding: 3px;
+    color: #ffffff;
+	left: -5px;
+}
+
+.mylink .connect-us .call-number {
+    position: absolute;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    width: 300px;
+    height: 60px;
+    top: 100%;
+    left: 20px;
+    color: #ffffff;
+    background: #ed1821;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px 0;
+}
+.mylink .connect-us .call-number a {
+    color: #fff;
+    font-size: 16px;
+}
+.mylink .connect-us .social-number {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.mylink .connect-us1 {
+    background: #ececec;
+    width: 120px;
+    height: 200px;
+    position: relative;
+}
+
+.mylink .connect-us1:before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+    z-index: 99999;
+}
+
+.mylink .connect-us1 h6 {
+    position: absolute;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    width: 200px;
+    height: 20px;
+    top: 100%;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.85rem;
+    padding: 3px 0;
+    color: #ffffff;
+}
+
+.mylink .connect-us1 .call-number {
+    position: absolute;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    width: 200px;
+    height: 80px;
+    top: 100%;
+    color: #ffffff;
+    background: #ff1a5c;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.show-connect {
+    right: 0;
+    position: fixed;
+}
+.connect-us img {
+    width: 24px;
+    height: 24px;
+}
+
+.dreambox-swiper-title {
+	font-size: 24px;
+	margin-top: 25px;
+	color: #4a4a4a;
+}
+.bg-purple {
+	background-color: #5b0069;
+}
+#caret {
+	background-color: #5b0069;
+    position: absolute;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    left: -24px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.85rem;
+    padding: 3px 0;
+    color: #ffffff;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+}
+/* .bg-gradient-new {
+	background: linear-gradient(to right, #5b0069 0%, #C5070A 51%, #5b0069 100%)
+} */
+
+ .landing-circle {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	bottom: 20px;
+	left: auto;
+	right: 0;
+	opacity: 0.35;
+	z-index: 4;
+	 animation: spin 25s infinite linear;
+    -webkit-animation: spin 25s infinite linear;
+}
+ .landing-circle-big {
+	position: absolute;
+	width: 500px;
+	height: 500px;
+    bottom: -35%;
+    left: -14%;
+	opacity: 0.35;
+	z-index: 4;
+	 animation: spin 25s infinite linear;
+    -webkit-animation: spin 25s infinite linear;
+}
+.background-image-land {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	top: 0;
+	left: 0;
+	animation: kenburns 45s ease-in-out infinite alternate;
+}
+.landing-wrapper .stars {
+	background: transparent url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+	animation: kenburns 45s ease-in-out infinite alternate;
+
+}
+@media only screen and (max-width: 768px) {
+	.dream-pagination .swiper-button-next, .dream-pagination .swiper-button-prev {
+		display: none;
+	}
+	.dream-box {
+		padding: 20px;
+	}
+}
+@media only screen and (max-width: 600px) {
+    .mylink {
+        right: -125px;
+    }
+	.mylink.show-connect {
+        right: 0;
+    }
+	.landing-circle {
+		display: none;
+	}
+	.landing-circle-big {
+		position: absolute;
+		width: 445px;
+		height: 445px;
+		left: -10%;
+	}
+	.image-new-try {
+		width: 312px;
+		top: 35%;
+		left: 55%;
+	}
+	.background-image-land {
+		background-position: right;
+	}
+	.product-single-infos, .tab-content {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
 }
