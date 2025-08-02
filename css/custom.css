@@ -1593,7 +1593,7 @@ address, .footer-div  {
     border: none;
     font-weight: 400;
     font-size: 14px;
-    padding: 8px 24px;
+    padding: 8px 20px;
 }
 
 nav .btn .icon {
@@ -3177,7 +3177,7 @@ nav .btn .icon {
 	position: absolute;
 	top: 0;
 	left: 13px;
-	font-family: "Font Awesome 6 Free";
+	font-family: "Font Awesome 7 Free";
 	font-weight: 900; /* solid icons */
 	font-size: 18px;
 }
@@ -3237,10 +3237,10 @@ nav .btn .icon {
 	border-radius: 12px;
 }
 
-.service-sel-list li:hover {
+/* .service-sel-list li:hover {
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 	transition: all ease-in-out 0.35s;
-}
+} */
 
 .service-sel-list li:hover .select-service-card {
 	background-color: #5b0069;
@@ -3513,11 +3513,17 @@ nav .btn .icon {
 	overflow: hidden;
 	padding: 10px;
 	height: 75px;
+	width: 75px;
+	border-radius: 50%;
 }
 .astro-list .sel-service-icon img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+
+.red {
+	color: #D20609;
 }
 /* Payment CSS */
 .pay-label {
@@ -5033,6 +5039,9 @@ nav .btn .icon {
 	.product-single-infos, .tab-content {
 		padding-left: 0;
 		padding-right: 0;
+	}
+	.input-select .input:valid ~ label.small-label {
+		font-size: 15px;
 	}
 
 }

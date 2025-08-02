@@ -28915,7 +28915,7 @@ blockquote.float-end {
   bottom: var(--cnvs-gotoTop-position-boxed-bottom);
 }
 #gotoTop:hover {
-  background-color: var(--cnvs-gotoTop-hover-color);
+  background-color: #5B0069;
 }
 
 /* ----------------------------------------------------------------
