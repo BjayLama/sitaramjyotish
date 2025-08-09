@@ -2228,8 +2228,12 @@
                 const $steps = $('.appointment-steps');
                 if (!$steps.length) return;
 
-                const stepsH = $steps.outerHeight(true);
-                $('.ap-form-style').css('height', stepsH + 'px'); // fixed height for scrolling
+                if (window.innerWidth < 1024) {
+                    $('.ap-form-style').css('height', '100%'); // full height for mobile/tablet
+                } else {
+                    const stepsH = $steps.outerHeight(true);
+                    $('.ap-form-style').css('height', stepsH + 'px'); // fixed height for larger screens
+                }
             }
 
             let resizeTimer = null;

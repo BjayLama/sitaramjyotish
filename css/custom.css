@@ -5126,3 +5126,9 @@ nav .btn .icon {
 	margin-top: 20px;
 	text-align: left;
 }
+
+@media only screen and (max-width: 1024px) {
+	.ap-form-sec {
+		overflow: initial;
+	}
+}
