@@ -1,0 +1,2535 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <!-- HTML Meta Tags -->
+    <title>Sitaram Jyotish Sewa</title>
+    <meta name="description" content="">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://bjaylama.github.io/sitaramjyotish/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sitaram Jyotish Sewa">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="bjaylama.github.io">
+    <meta property="twitter:url" content="https://bjaylama.github.io/sitaramjyotish/">
+    <meta name="twitter:title" content="Sitaram Jyotish Sewa">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+
+    <!-- Font Imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital@0;1&display=swap"
+        rel="stylesheet">
+
+    <!-- Core Style -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Font Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"
+        integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Document Title
+	============================================= -->
+    <title>Sitaram Jyotish Sewa</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+	============================================= -->
+    <div id="wrapper">
+
+
+        <!-- Header
+		============================================= -->
+        <header id="header" class="header-size-sm">
+
+
+            <div class="container-fluid custom-container">
+                <div class="header-row row align-items-center">
+                    <div class="col-4 col-sm-6 col-md-3 col-lg-2">
+                        <div id="logo" class="me-0 me-lg-auto">
+                            <a href="index.html">
+                                <img class="logo-default" srcset="" src="./images/logo-2.jpg" alt="Canvas Logo">
+                                <img class="logo-dark" srcset="images/logo-dark.jpg, images/logo-dark@2x.jpg 2x"
+                                    src="images/logo-dark@2x.jpg" alt="Canvas Logo">
+                            </a>
+                        </div>
+                    </div><!-- #logo end -->
+                    <div class="col-6 col-md-5 col-lg-4 d-sm-none d-md-block" id="search-box">
+                        <form action="">
+                            <div class="input-group">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">खोज
+                                    सूची</button>
+                                <div class="dropdown-menu" style="z-index:9999">
+                                    <a class="dropdown-item" href="service.html">हाम्रो सेवा</a>
+                                    <a class="dropdown-item" href="gemstone.html">रत्न</a>
+                                    <a class="dropdown-item" href="planets.html">ग्रह</a>
+                                    <a class="dropdown-item" href="horo.html">राशि</a>
+                                    <a class="dropdown-item" href="constellations.html">नक्षत्र</a>
+                                </div>
+                                <input type="text" name="q" value="" placeholder="कोटीहरू चयन गर्नुहोस् र खोज्नुहोस्"
+                                    class="form-control" aria-label="Text input with dropdown button"
+                                    data-has-listeners="true" autocomplete="off">
+                                <button type="submit" class="search-icon"><i class="fa fa-search"></i></button>
+
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-8 col-md-4 col-lg-6">
+                        <ul class="menu-right">
+                            <li class="d-none d-lg-flex">
+                                <i class="far fa-clock"></i>
+                                <div class="frame">
+                                    <div id="TIME_IN_NEPALI"></div>
+                                </div>
+                            </li>
+                            <li class="d-none d-lg-flex">
+                                <i class="far fa-calendar"></i>
+                                <div id="DATE_IN_NEPALI"> </div>
+                            </li>
+                            <li class="">
+                                <a href="#" class="btn btn-secondary mb-0">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                    </span>
+                                    Book Appoitment
+                                </a>
+                            </li>
+                            <li>
+                                <div class="primary-menu-trigger">
+                                    <button class="cnvs-hamburger" type="button">
+                                        <span class="cnvs-hamburger-box"><span
+                                                class="cnvs-hamburger-inner"></span></span>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="nav-wrap" class="border-top border-f5">
+                <div class="container-fluid custom-container">
+                    <div class="header-row justify-content-between">
+                        <!-- Primary Navigation
+						============================================= -->
+                        <nav class="primary-menu">
+
+                            <ul class="menu-container">
+                                <li class="menu-item has-menu">
+                                    <a href="#" class="btn btn-secondary mb-0">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-bars"></i>
+                                        </span>
+                                        हाम्रा सेवाहरू
+                                    </a>
+                                </li>
+                                <li class="menu-item"><a class="menu-link" href="#">
+                                        <div>मिति परिवर्तन</div>
+                                    </a></li>
+                                <li class="menu-item"><a class="menu-link" href="#">
+                                        <div>पञ्चाङ्ग</div>
+                                    </a></li>
+                                <li class="menu-item"><a class="menu-link" href="#">
+                                        <div>दैनिक राशिफल</div>
+                                    </a></li>
+                                <li class="menu-item"><a class="menu-link" href="#">
+                                        <div>वर-वधु मिलापन</div>
+                                    </a></li>
+                                <li class="menu-item"><a class="menu-link" href="#">
+                                        <div>विशिष्ट व्यक्तित्व कुण्डली</div>
+                                    </a></li>
+                                <li class="menu-item"><a class="menu-link" href="#">
+                                        <div>मूल्य निर्धारण सूची</div>
+                                    </a></li>
+                                <li class="menu-item"><a class="menu-link" href="#">
+                                        <div>सम्पर्क</div>
+                                    </a></li>
+                                <li class="d-md-block d-lg-none">
+                                    <a href="#" class="btn btn-secondary mb-0">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-calendar-days"></i>
+                                        </span>
+                                        Book Appoitment
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </nav><!-- #primary-menu end -->
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="main-menu">
+                <div id="sidebar-menu">
+                    <div class="sidebar-menu-logo">
+                        <img src="./images/logo-2.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="menu-close">
+                        <span class="close"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="sub-menu-container">
+                        <li class="menu-item">
+                            <a class="menu-link" href="#">
+                                <div>गृहपृष्ठ</div>
+                            </a>
+                        </li>
+                        <li class="menu-item has-submega-p p-static">
+                            <a class="menu-link has-submega" href="javascript:void(0)">
+                                <div>हाम्रा सेवाहरू</div>
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                            <ul class="sub-menu-container sub-mega-menu">
+                                <li class="menu-item">
+                                    <a class="menu-link" href="service-single.html">
+                                        <img src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली फलादेश
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="service-single.html"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली (चिना) बनाउने</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="service-single.html"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली मिलान</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="service-single.html"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        रत्न</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="service-single.html">
+                                        <img src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        वास्तुशास्त्र
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="service-single.html"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        यंत्र</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="service-single.html"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        ग्रह</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="service-single.html"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        ग्रहशान्ति</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="service-single.html"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        मुहूर्त निर्धारन</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="service-single.html"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        अनलाइन सेवा</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item has-submega-p p-static">
+                            <a class="menu-link has-submega" href="javascript:void(0)">
+                                <div>रत्न</div>
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                            <ul class="sub-menu-container sub-mega-menu">
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <img src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        माणिक
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        मोती</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        मुंगा</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        पन्ना</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <img src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        पुष्पराज
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        हीरा</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        ओपल</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        नीलम</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        गोमेद</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        लहसुनीया/वैदुर्य मणि</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item has-submega-p p-static">
+                            <a class="menu-link has-submega" href="javascript:void(0)">
+                                <div>ग्रह</div>
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                            <ul class="sub-menu-container sub-mega-menu">
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <img src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली फलादेश
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली (चिना) बनाउने</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली मिलान</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        रत्न</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <img src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली फलादेश
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली (चिना) बनाउने</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली मिलान</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        रत्न</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item has-submega-p p-static">
+                            <a class="menu-link has-submega" href="javascript:void(0)">
+                                <div>राशि </div>
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                            <ul class="sub-menu-container sub-mega-menu">
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <img src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली फलादेश
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली (चिना) बनाउने</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली मिलान</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        रत्न</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <img src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली फलादेश
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली (चिना) बनाउने</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली मिलान</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        रत्न</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item has-submega-p p-static">
+                            <a class="menu-link has-submega" href="javascript:void(0)">
+                                <div>नक्षत्र</div>
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                            <ul class="sub-menu-container sub-mega-menu">
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <img src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली फलादेश
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली (चिना) बनाउने</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली मिलान</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        रत्न</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <img src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली फलादेश
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली (चिना) बनाउने</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली मिलान</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        रत्न</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item has-submega-p p-static">
+                            <a class="menu-link has-submega" href="javascript:void(0)">
+                                <div>मन्त्र/आरती/चालीसा/स्तोत्र </div>
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                            <ul class="sub-menu-container sub-mega-menu">
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <img src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली फलादेश
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली (चिना) बनाउने</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली मिलान</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        रत्न</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <img src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली फलादेश
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली (चिना) बनाउने</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली मिलान</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        रत्न</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item has-submega-p p-static">
+                            <a class="menu-link has-submega" href="javascript:void(0)">
+                                <div>व्रत विधि </div>
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                            <ul class="sub-menu-container sub-mega-menu">
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <img src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली फलादेश
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली (चिना) बनाउने</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली मिलान</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        रत्न</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <img src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली फलादेश
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली (चिना) बनाउने</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        कुण्डली मिलान</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#"><img
+                                            src="https://www.jyotishnepal.com.np/storage/services/1707655132_icon_.png"
+                                            alt="" width="20px">
+                                        रत्न</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item p-static">
+                            <a class="menu-link" href="javascript:void(0)">
+                                <div>विदेश यात्रा मुहुर्त </div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="javascript:void(0)">
+                                <div>पूजाको सामग्रीहरू </div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="onepage-demos.html">
+                                <div>गोत्र </div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="blocks.html">
+                                <div>हाम्रा बारेमा </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-fluid custom-container">
+                <div id="search-box" class="second">
+                    <form action="">
+                        <div class="input-group">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">खोज सूची</button>
+                            <div class="dropdown-menu" style="z-index:9999">
+                                <a class="dropdown-item" href="#">हाम्रो सेवा</a>
+                                <a class="dropdown-item" href="#">रत्न</a>
+                                <a class="dropdown-item" href="#">ग्रह</a>
+                                <a class="dropdown-item" href="#">राशि</a>
+                                <a class="dropdown-item" href="#">नक्षत्र</a>
+                            </div>
+                            <input type="text" name="q" value="" placeholder="कोटीहरू चयन गर्नुहोस् र खोज्नुहोस्"
+                                class="form-control" aria-label="Text input with dropdown button"
+                                data-has-listeners="true" autocomplete="off">
+                            <button type="submit" class="search-icon"><i class="fa fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- <div class="header-wrap-clone"></div> -->
+        </header><!-- #header end -->
+
+        <!-- Content
+		============================================= -->
+        <section id="content">
+            <div class="content-wrap">
+                <div class="breadcrumb">
+                    <div class="breadcrumb-img" style="background-image: url(./images/landing/breadcrumb.webp)"></div>
+                    <div class="container-fluid custom-container">
+                        <div class="breadcrumb-link">
+                            <a href="index.html">गृहपृष्ठ</a> /
+                            <a href="javascript:void(0)">हाम्रो सेवाहरू</a>
+                        </div>
+                        <div class="page-title">
+                            हाम्रो सेवाहरू
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="appointment-sec">
+                    <div class="container-fluid custom-container">
+
+                        <div class="form-heading">
+                            <div class="form-heading-title" data-aos="fade-up" data-aos-duration="1200"
+                                data-aos-offset="100">
+                                सजिलो प्रक्रिया, छिटो प्रतिक्रिया
+                            </div>
+
+                            <div class="form-heading-desc" data-aos="fade-up" data-aos-duration="1500"
+                                data-aos-offset="100">
+                                ज्योतिष परामर्श अब सजिलै, छिटो र भरपर्दो सेवासहित तपाईंको घरमै, जहाँ अनुभव, विश्वास
+                                र समाधान एउटै ठाउँमा भेटिन्छ!
+                            </div>
+
+                        </div>
+
+
+                        <div class="appointment-form">
+
+                            <div class="appointment-element">
+                                <img src="./images/landing/about-1.png" alt="">
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-3 tab-none">
+                                    <div class="appointment-steps">
+                                        <div class="steps-count">
+                                            <div class="steps-info steps-1 active-step">
+                                                <div class="steps-num"><span class="num">1</span></div>
+                                                <div class="steps-detail" data-aos="fade-up" data-aos-duration="1200">
+                                                    <div class="steps-name">सेवा-चयन</div>
+                                                    <div class="short-desc">
+                                                        आफ्नो आवश्यकताअनुसार उपयुक्त
+                                                        ज्योतिष
+                                                        सेवा
+                                                        छान्नुहोस्,
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="steps-info steps-2">
+                                                <div class="steps-num"><span class="num">2</span></div>
+                                                <div class="steps-detail" data-aos="fade-up" data-aos-duration="1400">
+                                                    <div class="steps-name"> मिति र समय चयन
+                                                    </div>
+                                                    <div class="short-desc">
+                                                        उपयुक्त समय र मिति छान्नुहोस्
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="steps-info steps-3">
+                                                <div class="steps-num"> <span class="num">3</span></div>
+                                                <div class="steps-detail" data-aos="fade-up" data-aos-duration="1600">
+                                                    <div class="steps-name"> ज्योतिषी छान्नुहोस्
+                                                    </div>
+                                                    <div class="short-desc">
+                                                        जीवनको दिशा र भविष्य बुझ्नका लागि योग्य
+                                                        ज्योतिषीहरूमध्ये रोज्नुहोस्
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="steps-info steps-4">
+                                                <div class="steps-num"> <span class="num">4</span></div>
+
+                                                <div class="steps-detail" data-aos="fade-up" data-aos-duration="1800">
+                                                    <div class="steps-name">
+                                                        ठेगाना</div>
+                                                    <div class="short-desc">
+
+                                                        आफ्नो ठेगाना थप्नुहोस्
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="steps-info steps-5">
+                                                <div class="steps-num"><span class="num">5</span></div>
+                                                <div class="steps-detail" data-aos="fade-up" data-aos-duration="2000">
+                                                    <div class="steps-name">
+                                                        व्यक्तिगत जानकारी
+                                                    </div>
+                                                    <div class="short-desc">
+                                                        सही नतिजाको लागि आफ्नो व्यक्तिगत विवरणहरू थप्नुहोस्
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="steps-info steps-6">
+                                                <div class="steps-num"><span class="num">6</span></div>
+                                                <div class="steps-detail" data-aos="fade-up" data-aos-duration="2200">
+                                                    <div class="steps-name">
+                                                        नियुक्ति पुष्टि गर्नुहोस्
+                                                    </div>
+                                                    <div class="short-desc">सबै विवरणहरू सच्याएर जाँच गर्नुहोस्।
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="steps-info steps-7">
+                                                <div class="steps-num"><span class="num">7</span></div>
+                                                <div class="steps-detail" data-aos="fade-up" data-aos-duration="2400">
+                                                    <div class="steps-name">भुक्तानी विवरण
+                                                    </div>
+                                                    <div class="short-desc">
+                                                        तपाईंको लागि उपयुक्त भुक्तानी विवरण
+                                                        छनौट गर्नुहोस्
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9">
+
+                                    <div class="ap-form-sec">
+                                        <div id="step-1" class="ap-form-style ap-form-step-1">
+                                            <form action="" class="h-100">
+                                                <div class="ap-form-heading">
+                                                    <div class="ap-form-title" data-aos="fade-up"
+                                                        data-aos-duration="1200">तपाईंले बुक गर्न चाहनुभएको सेवा
+                                                        चयन
+                                                        गर्नुहोस्
+                                                    </div>
+                                                    <div class="ap-form-desc" data-aos="fade-up"
+                                                        data-aos-duration="1500">आफ्नो आवश्यकताअनुसार उपयुक्त
+                                                        ज्योतिष
+                                                        सेवा
+                                                        छान्नुहोस्, जहाँ हरेक समाधान तपाईंकै छनोटबाट सुरु हुन्छ
+                                                    </div>
+                                                </div>
+                                                <div class="service-select" data-aos="fade-up" data-aos-duration="1800">
+                                                    <ul class="service-sel-list">
+                                                        <li>
+                                                            <input type="radio" name="service-sel" id="service-1"
+                                                                hidden>
+                                                            <label class="select-service-card" for="service-1">
+                                                                <i class="fa-solid fa-check-to-slot"></i>
+                                                                <div class="sel-service-icon">
+                                                                    <img src="./images/landing/s1.png" class="img-fluid"
+                                                                        alt="">
+                                                                </div>
+                                                                <div class="sel-service-infos">
+                                                                    <div class="sel-service-title">
+                                                                        चिना हेर्ने
+                                                                    </div>
+                                                                    <div class="sel-service-time">
+                                                                        ३० मिनेट / आधा घण्टा
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="service-sel" id="service-2"
+                                                                hidden>
+                                                            <label class="select-service-card" for="service-2">
+                                                                <div class="sel-service-icon">
+                                                                    <img src="./images/landing/s1.png" class="img-fluid"
+                                                                        alt="">
+                                                                </div>
+                                                                <div class="sel-service-infos">
+                                                                    <i class="fa-solid fa-check-to-slot"></i>
+                                                                    <div class="sel-service-title">
+                                                                        चिना हेर्ने (विदेशमा रहनु भएको)
+                                                                    </div>
+                                                                    <div class="sel-service-time">
+                                                                        ३० मिनेट / आधा घण्टा
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="service-sel" id="service-3"
+                                                                hidden>
+                                                            <label class="select-service-card" for="service-3">
+                                                                <div class="sel-service-icon">
+                                                                    <img src="./images/landing/s3.png" class="img-fluid"
+                                                                        alt="">
+                                                                </div>
+                                                                <div class="sel-service-infos">
+                                                                    <i class="fa-solid fa-check-to-slot"></i>
+                                                                    <div class="sel-service-title">
+                                                                        चिना जुराउने
+                                                                    </div>
+                                                                    <div class="sel-service-time">
+                                                                        ३० मिनेट / आधा घण्टा
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="service-sel" id="service-4"
+                                                                hidden>
+                                                            <label class="select-service-card" for="service-4">
+                                                                <div class="sel-service-icon">
+                                                                    <img src="./images/landing/s3.png" class="img-fluid"
+                                                                        alt="">
+                                                                </div>
+                                                                <div class="sel-service-infos">
+                                                                    <i class="fa-solid fa-check-to-slot"></i>
+                                                                    <div class="sel-service-title">
+                                                                        चिना जुराउने (विदेशमा रहनु भएको)
+                                                                    </div>
+                                                                    <div class="sel-service-time">
+                                                                        ३० मिनेट / आधा घण्टा
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="service-sel" id="service-5"
+                                                                hidden>
+                                                            <label class="select-service-card" for="service-5">
+                                                                <div class="sel-service-icon">
+                                                                    <img src="./images/landing/s2.png" class="img-fluid"
+                                                                        alt="">
+                                                                </div>
+                                                                <div class="sel-service-infos">
+                                                                    <i class="fa-solid fa-check-to-slot"></i>
+                                                                    <div class="sel-service-title">
+                                                                        चिना बनाउने
+                                                                    </div>
+                                                                    <div class="sel-service-time">
+                                                                        ३० मिनेट / आधा घण्टा
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="service-sel" id="service-6"
+                                                                hidden>
+                                                            <label class="select-service-card" for="service-6">
+                                                                <div class="sel-service-icon">
+                                                                    <img src="./images/landing/s2.png" class="img-fluid"
+                                                                        alt="">
+                                                                </div>
+                                                                <div class="sel-service-infos">
+                                                                    <i class="fa-solid fa-check-to-slot"></i>
+                                                                    <div class="sel-service-title">
+                                                                        चिना बनाउने (विदेशमा जन्मनु भएको)
+                                                                    </div>
+                                                                    <div class="sel-service-time">
+                                                                        ३० मिनेट / आधा घण्टा
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="service-sel" id="service-7"
+                                                                hidden>
+                                                            <label class="select-service-card" for="service-7">
+                                                                <div class="sel-service-icon">
+                                                                    <img src="./images/landing/pdf.png"
+                                                                        class="img-fluid" alt="">
+                                                                </div>
+                                                                <div class="sel-service-infos">
+                                                                    <i class="fa-solid fa-check-to-slot"></i>
+                                                                    <div class="sel-service-title">
+                                                                        चिना बनाउने (PDF)
+                                                                    </div>
+                                                                    <div class="sel-service-time">
+                                                                        ३० मिनेट / आधा घण्टा
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="service-sel" id="service-8"
+                                                                hidden>
+                                                            <label class="select-service-card" for="service-8">
+                                                                <div class="sel-service-icon">
+                                                                    <img src="./images/landing/pdf-1.png"
+                                                                        class="img-fluid" alt="">
+                                                                </div>
+                                                                <div class="sel-service-infos">
+                                                                    <i class="fa-solid fa-check-to-slot"></i>
+                                                                    <div class="sel-service-title">
+                                                                        चिना बनाउने (विदेशमा जन्मनु भएको) (PDF)
+                                                                    </div>
+                                                                    <div class="sel-service-time">
+                                                                        ३० मिनेट / आधा घण्टा
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="service-sel" id="service-9"
+                                                                hidden>
+                                                            <label class="select-service-card" for="service-9">
+                                                                <div class="sel-service-icon">
+                                                                    <img src="./images/landing/puja.png"
+                                                                        class="img-fluid" alt="">
+                                                                </div>
+                                                                <div class="sel-service-infos">
+                                                                    <i class="fa-solid fa-check-to-slot"></i>
+                                                                    <div class="sel-service-title">
+                                                                        पूजा
+                                                                    </div>
+                                                                    <div class="sel-service-time">
+                                                                        ३० मिनेट / आधा घण्टा
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="step-1-submit">
+
+                                                        <div class="button">
+                                                            <span class="button__icon-wrapper">
+                                                                <svg viewBox="0 0 14 15" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    class="button__icon-svg" width="10">
+                                                                    <path
+                                                                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                                                        fill="currentColor"></path>
+                                                                </svg>
+
+                                                                <svg viewBox="0 0 14 15" fill="none" width="10"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    class="button__icon-svg button__icon-svg--copy">
+                                                                    <path
+                                                                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                                                        fill="currentColor"></path>
+                                                                </svg>
+                                                            </span>
+                                                            अगाडि बढ्नुहोस्
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                        <div id="step-2" class="ap-form-style ap-form-step-2">
+                                            <form action="" class="h-100">
+                                                <div class="ap-form-heading mb-5">
+                                                    <div class="ap-form-title">
+                                                        मिति र समय चयनकर्ता
+                                                    </div>
+                                                    <div class="ap-form-desc">तपाईंको लागि सबैभन्दा उपयुक्त समय र मिति
+                                                        छान्नुहोस्
+                                                    </div>
+                                                </div>
+                                                <div class="service-input row">
+                                                    <div class="col-md-6">
+                                                        <div class="input-select top-label">
+                                                            <input required="required" type="date" class="input">
+                                                            <span class="bar"></span>
+                                                            <label>भेटघाट मिति चयन गर्नुहोस्:</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="input-select top-label">
+                                                            <input required type="time" class="input">
+                                                            <span class="bar"></span>
+                                                            <label>भेटघाट समय चयन गर्नुहोस्:</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="btn btn-danger back-step-1">
+                                                        <i class="fa-solid fa-arrow-left"></i> अघिल्लो चरण
+                                                    </div>
+                                                    <div class="btn btn-blue step-2-submit">
+                                                        अगाडि बढ्नुहोस् <i class="fa-solid fa-arrow-right"></i>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div id="step-3" class="ap-form-style ap-form-step-3">
+                                            <form action="" class="h-100">
+                                                <div class="ap-form-heading">
+                                                    <div class="ap-form-title"> विश्वासिलो र अनुभवी ज्योतिषी चयन
+                                                        गर्नुहोस्
+                                                    </div>
+                                                    <div class="ap-form-desc">जीवनको दिशा र भविष्य बुझ्नका लागि योग्य
+                                                        ज्योतिषीहरूमध्ये रोज्नुहोस् — तपाईंको समय, तपाईंको निर्णय।
+                                                    </div>
+                                                </div>
+                                                <div class="service-select">
+                                                    <ul class="service-sel-list astro-list">
+                                                        <li>
+                                                            <input type="radio" name="choose-astro" id="astro-1" hidden>
+                                                            <label class="select-service-card" for="astro-1">
+                                                                <i class="fa-solid fa-check-to-slot"></i>
+                                                                <div class="sel-service-icon">
+                                                                    <img src="./images/landing/3.png" class="img-fluid"
+                                                                        alt="">
+                                                                </div>
+                                                                <div class="sel-service-infos">
+                                                                    <div class="sel-service-title">
+                                                                        सीताराम ज्योतिष
+                                                                    </div>
+                                                                    <div class="sel-service-time">
+                                                                        ज्योतिषी
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="choose-astro" id="astro-2" hidden>
+                                                            <label class="select-service-card" for="astro-2">
+                                                                <div class="sel-service-icon">
+                                                                    <img src="./images/landing/2.png" class="img-fluid"
+                                                                        alt="">
+                                                                </div>
+                                                                <div class="sel-service-infos">
+                                                                    <i class="fa-solid fa-check-to-slot"></i>
+                                                                    <div class="sel-service-title">
+
+                                                                        हरिराम खड्का
+                                                                    </div>
+                                                                    <div class="sel-service-time">
+                                                                        ज्योतिषी
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="btn btn-danger back-step-2">
+                                                            <i class="fa-solid fa-arrow-left"></i> अघिल्लो चरण
+                                                        </div>
+                                                        <div class="btn btn-blue step-3-submit">
+                                                            अगाडि बढ्नुहोस् <i class="fa-solid fa-arrow-right"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div id="step-4" class="ap-form-style ap-form-step-4">
+                                            <form action="" class="h-100">
+                                                <div class="ap-form-heading mb-5">
+                                                    <div class="ap-form-title">
+                                                        ठेगाना विवरण
+                                                    </div>
+                                                    <div class="ap-form-desc">
+                                                        आफ्नो ठेगाना थप्नुहोस्
+                                                    </div>
+                                                </div>
+                                                <div class="service-input row">
+                                                    <div class="col-md-6">
+                                                        <div class="input-select top-label">
+                                                            <span class=" bar"></span>
+
+                                                            <label>Country: <span class="red">*</span></label>
+                                                            <select name=" place_of_birth" class="input" id="countries"
+                                                                style="width: 100%;padding: 8px 12px">
+                                                                <option value="Nepal" data-capital="Kathmandu"
+                                                                    data-name="NP" selected>Nepal
+                                                                </option>
+                                                                <option value="Netherlands" data-capital="Amsterdam"
+                                                                    data-name="NL">Netherlands
+                                                                </option>
+                                                                <option value="New Zealand" data-capital="Wellington"
+                                                                    data-name="NZ">New Zealand
+                                                                </option>
+                                                                <option value="Nicaragua" data-capital="Managua"
+                                                                    data-name="NI">Nicaragua
+                                                                </option>
+                                                                <option value="Yemen" data-capital="Sana'a"
+                                                                    data-name="YE">
+                                                                    Yemen</option>
+                                                                <option value="Zambia" data-capital="Lusaka"
+                                                                    data-name="ZM">
+                                                                    Zambia</option>
+                                                                <option value="Zimbabwe" data-capital="Harare"
+                                                                    data-name="ZW">Zimbabwe</option>
+
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="input-select">
+                                                            <input required="" type="text" class="input">
+                                                            <span class="bar"></span>
+                                                            <label>ठेगाना लाइन 1: <span class="red">*</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-xl-6">
+                                                        <div class="input-select">
+                                                            <input required="" type="text" class="input">
+                                                            <span class="bar"></span>
+                                                            <label>
+
+                                                                ठेगाना लाइन २ (वैकल्पिक):</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-xl-6">
+                                                        <div class="input-select top-label">
+                                                            <select name="" id="" class="input">
+
+                                                                <option value="1">Facebook</option>
+                                                                <option value="2">Instagram</option>
+                                                                <option value="3">Twitter</option>
+                                                                <option value="3">Google</option>
+                                                                <option value="3">Relatives</option>
+                                                                <option value="3">Friends</option>
+                                                                <option value="3">Advertisement</option>
+                                                                <option value="3">Others</option>
+                                                            </select>
+                                                            <span class="bar"></span>
+                                                            <label class="small-label">
+                                                                तपाईंले हामीलाई निम्न माध्यमबाट फेला पार्नुभयो:</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 d-md-flex justify-content-between">
+                                                        <div class="btn btn-danger back-step-3">
+                                                            <i class="fa-solid fa-arrow-left"></i> अघिल्लो चरण
+                                                        </div>
+                                                        <div class="btn btn-blue step-4-submit ml-auto">
+                                                            अगाडि बढ्नुहोस् <i class="fa-solid fa-arrow-right"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+
+                                        </div>
+                                        <div id="step-5" class="ap-form-style ap-form-step-5">
+                                            <form action="" class="h-100">
+                                                <div class="ap-form-heading mb-5">
+                                                    <div class="ap-form-title">
+                                                        आफ्नो व्यक्तिगत जानकारी थप्नुहोस्
+
+                                                    </div>
+                                                    <div class="ap-form-desc">
+                                                        सही नतिजाको लागि आफ्नो व्यक्तिगत विवरणहरू थप्नुहोस्
+                                                        <small><i>* भएका क्षेत्रहरू आवश्यक छन्।</i></small>
+                                                    </div>
+                                                </div>
+                                                <div class="country-nepal making-country">
+                                                    <div class="service-input row">
+                                                        <div class="col-md-6">
+                                                            <div class="input-select">
+                                                                <input required type="text" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    पूरा नाम: <span class="red">*</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select">
+                                                                <input required type="text" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    बुबाको जन्म नाम: <span class="red">*</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select">
+                                                                <input required type="text" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    आमाको जन्म नाम
+                                                                    : <span class="red">*</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select">
+                                                                <input required type="text" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    कुण्डलीको पूरा नाम
+                                                                    : <span class="red">*</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select top-label">
+                                                                <input required="" type="date" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>जन्म मिति (बी.एस.):</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select top-label">
+                                                                <input required="" type="date" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>जन्म मिति (A.D.):</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select top-label">
+                                                                <input required="" type="time" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    जन्म समय:</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select top-label">
+                                                                <select name="" id="" class="input">
+                                                                    <option value="1">कोशी प्रदेश</option>
+                                                                    <option value="2">मधेश प्रदेश</option>
+                                                                    <option value="3">बागमती प्रदेश</option>
+                                                                    <option value="4"> गण्डकी प्रदेश </option>
+                                                                    <option value="5">लुम्बिनी प्रदेश</option>
+                                                                    <option value="6"> कर्णाली प्रदेश</option>
+                                                                    <option value="7"> सुदूरपश्चिम प्रदेश</option>
+                                                                </select>
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    जन्म प्रदेश</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select top-label">
+                                                                <select name="" id="" class="input">
+                                                                    <option value="1">कोशी प्रदेश</option>
+                                                                    <option value="2">मधेश प्रदेश</option>
+                                                                    <option value="3">बागमती प्रदेश</option>
+                                                                    <option value="4"> गण्डकी प्रदेश </option>
+                                                                    <option value="5">लुम्बिनी प्रदेश</option>
+                                                                    <option value="6"> कर्णाली प्रदेश</option>
+                                                                    <option value="7"> सुदूरपश्चिम प्रदेश</option>
+                                                                </select>
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    जन्म जिल्ला</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select top-label">
+                                                                <input required="" type="time" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    जन्म स्थान:</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="ap-form-heading mb-5">
+                                                                <div class="ap-form-title">
+                                                                    आवासीय पूरा ठेगाना
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select top-label">
+                                                                <select name="" id="" class="input">
+                                                                    <option value="1">कोशी प्रदेश</option>
+                                                                    <option value="2">मधेश प्रदेश</option>
+                                                                    <option value="3">बागमती प्रदेश</option>
+                                                                    <option value="4"> गण्डकी प्रदेश </option>
+                                                                    <option value="5">लुम्बिनी प्रदेश</option>
+                                                                    <option value="6"> कर्णाली प्रदेश</option>
+                                                                    <option value="7"> सुदूरपश्चिम प्रदेश</option>
+                                                                </select>
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    हालको प्रदेश</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select top-label">
+                                                                <select name="" id="" class="input">
+                                                                    <option value="1">कोशी प्रदेश</option>
+                                                                    <option value="2">मधेश प्रदेश</option>
+                                                                    <option value="3">बागमती प्रदेश</option>
+                                                                    <option value="4"> गण्डकी प्रदेश </option>
+                                                                    <option value="5">लुम्बिनी प्रदेश</option>
+                                                                    <option value="6"> कर्णाली प्रदेश</option>
+                                                                    <option value="7"> सुदूरपश्चिम प्रदेश</option>
+                                                                </select>
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    हालको जिल्ला</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select top-label">
+                                                                <select name="" id="" class="input">
+                                                                    <option value="1">गाउँपालिका</option>
+                                                                    <option value="2">उप-महानगरपालिका</option>
+                                                                    <option value="3">महानगरपालिका</option>
+                                                                    <option value="4"> नगरपालिका </option>
+                                                                </select>
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    जन्म नगरपालिका</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select top-label">
+                                                                <input required="" type="time" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    नगरपालिकाको नाम
+                                                                    :</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select top-label">
+                                                                <input required="" type="time" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    वडा नम्बर
+                                                                    :</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select top-label">
+                                                                <input required="" type="time" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    हालको स्थानको नाम
+                                                                    :</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select">
+                                                                <input required="" type="text" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    फोन नम्बर: <span class="red">*</span></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select">
+                                                                <input required="" type="text" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>फोन नम्बर(वैकल्पिक):
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select">
+                                                                <input required="" type="email" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    इमेल ठेगाना:
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select top-label">
+                                                                <select name="" id="" class="input">
+                                                                    <option value="1">पुरुष/Male</option>
+                                                                    <option value="2">महिला/Female</option>
+                                                                    <option value="3">अन्य/Others</option>
+                                                                </select>
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    लिङ्ग चयन गर्नुहोस्/Gender</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select">
+                                                                <input required="" type="text" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    गोत्र:</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select">
+                                                                <input required="" type="email" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    व्यक्तिको जन्म संख्या (जातक): </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select">
+                                                                <input required="" type="number" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    दाजुभाइ दिदीबहिनीको संख्या
+                                                                    : </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select">
+                                                                <input required="" type="number" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    दाजुको नाम
+                                                                    : </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select">
+                                                                <input required="" type="number" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    दाजुको नाम
+                                                                    : </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="input-select top-label">
+                                                                <textarea name="" class="input" id=""></textarea>
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    नोट
+                                                                    : </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 d-md-flex justify-content-between">
+                                                            <div class="btn btn-danger back-step-4">
+                                                                <i class="fa-solid fa-arrow-left"></i> अघिल्लो चरण
+                                                            </div>
+                                                            <div class="btn btn-blue step-5-submit ml-auto">
+                                                                अगाडि बढ्नुहोस् <i class="fa-solid fa-arrow-right"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="country-foreign">
+                                                    <div class="service-input row">
+                                                        <div class="col-md-6">
+                                                            <div class="input-select">
+                                                                <input required type="text" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    पूरा नाम: <span class="red">*</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select">
+                                                                <input required type="text" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    बुबाको जन्म नाम: <span class="red">*</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select">
+                                                                <input required type="text" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    आमाको जन्म नाम
+                                                                    : <span class="red">*</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select">
+                                                                <input required type="text" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    कुण्डलीको पूरा नाम
+                                                                    : <span class="red">*</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select top-label">
+                                                                <input required="" type="date" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>जन्म मिति (बी.एस.):</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select top-label">
+                                                                <input required="" type="date" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>जन्म मिति (A.D.):</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select top-label">
+                                                                <input required="" type="time" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    जन्म समय:</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select top-label">
+                                                                <input required="" type="time" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    जन्म पूरा स्थान:</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select top-label">
+                                                                <input required="" type="time" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    आवासीय पूरा ठेगाना
+                                                                    :</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select">
+                                                                <input required="" type="text" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    फोन नम्बर: <span class="red">*</span></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select">
+                                                                <input required="" type="text" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>फोन नम्बर(वैकल्पिक):
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select">
+                                                                <input required="" type="email" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    इमेल ठेगाना:
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select top-label">
+                                                                <select name="" id="" class="input">
+                                                                    <option value="1">पुरुष/Male</option>
+                                                                    <option value="2">महिला/Female</option>
+                                                                    <option value="3">अन्य/Others</option>
+                                                                </select>
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    लिङ्ग चयन गर्नुहोस्/Gender</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select">
+                                                                <input required="" type="text" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    गोत्र:</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select">
+                                                                <input required="" type="email" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    व्यक्तिको जन्म संख्या (जातक): </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select">
+                                                                <input required="" type="number" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    दाजुभाइ दिदीबहिनीको संख्या
+                                                                    : </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select">
+                                                                <input required="" type="number" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    दाजुको नाम
+                                                                    : </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-select">
+                                                                <input required="" type="number" class="input">
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    दाजुको नाम
+                                                                    : </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="input-select top-label">
+                                                                <textarea name="" class="input" id=""></textarea>
+                                                                <span class="bar"></span>
+                                                                <label>
+                                                                    नोट
+                                                                    : </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 d-md-flex justify-content-between">
+                                                            <div class="btn btn-danger back-step-4">
+                                                                <i class="fa-solid fa-arrow-left"></i> अघिल्लो चरण
+                                                            </div>
+                                                            <div class="btn btn-blue step-5-submit ml-auto">
+                                                                अगाडि बढ्नुहोस् <i class="fa-solid fa-arrow-right"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div id="step-6" class="ap-form-style ap-form-step-6">
+                                            <form action="" class="h-100">
+                                                <div class="ap-form-heading mb-5">
+                                                    <div class="ap-form-title">
+                                                        नियुक्ति पुष्टि गर्नुहोस्
+                                                    </div>
+                                                    <div class="ap-form-desc">
+                                                        तपाईंले भर्नुभएको सबै विवरणहरू सच्याएर जाँच गर्नुहोस्।
+                                                    </div>
+                                                </div>
+                                                <div class="service-input infos-service row">
+                                                    <div class="col-md-7">
+                                                        <div class="selected-service">
+                                                            <ul class="service-sel-list mb-0">
+                                                                <li>
+                                                                    <input type="radio" name="selected-ser"
+                                                                        id="selected-ser" checked hidden>
+                                                                    <label class="select-service-card"
+                                                                        for="selected-ser">
+                                                                        <i class="fa-solid fa-check-to-slot"></i>
+                                                                        <div class="sel-service-icon">
+                                                                            <img src="./images/landing/s1.png"
+                                                                                class="img-fluid" alt="">
+                                                                        </div>
+                                                                        <div class="sel-service-infos">
+                                                                            <div class="sel-service-title">
+                                                                                चिना हेर्ने
+                                                                            </div>
+                                                                            <div class="sel-service-time">
+                                                                                ३० मिनेट / आधा घण्टा
+                                                                            </div>
+                                                                        </div>
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <hr>
+                                                        <div class="date-info-show">
+                                                            <h5 class="mb-2">मिति र समय</h5>
+                                                            <p>
+                                                                <strong>मिति: </strong>
+
+                                                                २०२५-०७-१७
+                                                            </p>
+                                                            <p>
+                                                                <strong>समय: </strong>
+                                                                बिहान ९:००-९:३० बजे
+                                                            </p>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="per-info-show">
+                                                            <h5>व्यक्तिगत जानकारी
+                                                            </h5>
+                                                            <p>
+                                                                <strong>पूरा नाम: </strong>
+                                                                हरिराम खड्का
+                                                            </p>
+                                                            <p>
+                                                                <strong>
+                                                                    इमेल ठेगाना: </strong>
+                                                                हरिराम@gmail.com
+                                                            </p>
+                                                            <p>
+                                                                <strong>फोन नम्बर: </strong>
+                                                                ९७८५६३२१४५
+                                                            </p>
+                                                            <p>
+                                                                <strong>DOB in BS: </strong>
+                                                                २०५५-०७-१७
+
+                                                            </p>
+                                                            <p>
+                                                                <strong>DOB in AD: </strong>
+                                                                १९९९-०२-०१
+                                                            </p>
+                                                            <p>
+                                                                <strong>Birth Time: </strong>
+                                                                बिहान ९:००-९:३० बजे
+                                                            </p>
+                                                            <p>
+                                                                <strong>
+                                                                    लिङ्ग: </strong>
+
+                                                                पुरुष
+                                                            </p>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="per-info-show">
+                                                            <h5>ठेगाना विवरण
+                                                            </h5>
+                                                            <p>
+                                                                <strong>Country: </strong>
+
+                                                                नेपाल
+                                                            </p>
+                                                            <p>
+                                                                <strong>Address Line 1: </strong>
+                                                                काठमाडौं
+                                                            </p>
+                                                            <p>
+                                                                <strong>Address Line 2: </strong>
+                                                                काठमाडौं
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <div class="pay-sec">
+                                                            <div class="pay-heading">
+                                                                भुक्तानी विवरण
+                                                            </div>
+
+                                                            <div class="pay-body">
+                                                                <ul class="amount-list">
+                                                                    <li>
+                                                                        <strong>
+
+                                                                            रकम
+                                                                        </strong>
+                                                                        <span id="price-amt">
+                                                                            1200
+                                                                        </span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong>
+                                                                            छुट
+                                                                        </strong>
+                                                                        <span id="price-amt">
+                                                                            1200
+                                                                        </span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong>
+
+                                                                            कुल रकम
+                                                                        </strong>
+                                                                        <span id="price-amt">
+                                                                            1200
+                                                                        </span>
+                                                                    </li>
+                                                                    <hr>
+                                                                    <li class="d-block">
+                                                                        <label><small>छुट कोड (यदि कुनै छ
+                                                                                भने)</small></label>
+                                                                        <div class="input-group mb-3"
+                                                                            bis_skin_checked="1">
+                                                                            <span class="input-group-text"
+                                                                                id="basic-addon1"><i
+                                                                                    class="fa-solid fa-tags"></i></span>
+                                                                            <input type="text" class="form-control"
+                                                                                id="couponCode"
+                                                                                placeholder="Coupon Code"
+                                                                                aria-label="Username"
+                                                                                aria-describedby="basic-addon1"
+                                                                                data-has-listeners="true"
+                                                                                autocomplete="off">
+                                                                            <button class="btn btn-dark" type="button"
+                                                                                id="applyCouponBtn">Apply</button>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="small-flex">
+                                                                        <div class="btn btn-danger back-step-5">
+                                                                            <i class="fa-solid fa-arrow-left"></i>
+                                                                            अघिल्लो चरण
+                                                                        </div>
+                                                                        <div class="btn btn-blue step-6-submit ml-auto">
+                                                                            अगाडि बढ्नुहोस् <i
+                                                                                class="fa-solid fa-arrow-right"></i>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div id="step-7" class="ap-form-style ap-form-step-7">
+                                            <form action="" class="h-100">
+                                                <div class="ap-form-heading mb-5">
+                                                    <div class="ap-form-title">
+                                                        तल भुक्तानी विधि छनौट गर्नुहोस्
+                                                    </div>
+                                                    <div class="ap-form-desc"> तपाईंको लागि उपयुक्त भुक्तानी विवरण
+                                                        छनौट गर्नुहोस्
+                                                    </div>
+                                                </div>
+                                                <div class="service-select">
+                                                    <ul class="service-sel-list">
+                                                        <li>
+                                                            <input type="radio" name="payment-opt" id="pay-cash" checked
+                                                                hidden>
+                                                            <label class="select-service-card pay-label" for="pay-cash">
+                                                                <div class="sel-service-infos">
+                                                                    <i class="fa-solid fa-check-to-slot"></i>
+                                                                    <img src="./images/landing/cod.png" alt="">
+                                                                    <div class="sel-service-title">
+                                                                        नगद विकल्प
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="payment-opt" id="2" hidden>
+                                                            <label class="select-service-card pay-label" for="2">
+                                                                <div class="sel-service-infos">
+                                                                    <i class="fa-solid fa-check-to-slot"></i>
+                                                                    <img src="./images/landing/fonepay-logo.png" alt="">
+                                                                    <div class="sel-service-title">
+                                                                        नगद विकल्प
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+
+
+
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="payment-opt" id="3" hidden>
+                                                            <label class="select-service-card pay-label" for="3">
+                                                                <div class="sel-service-infos">
+                                                                    <i class="fa-solid fa-check-to-slot"></i>
+                                                                    <img src="./images/landing/esewa-logo.png" alt="">
+                                                                    <div class="sel-service-title">
+                                                                        नगद विकल्प
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="payment-opt" id="4" hidden>
+                                                            <label class="select-service-card pay-label" for="4">
+                                                                <div class="sel-service-infos">
+                                                                    <i class="fa-solid fa-check-to-slot"></i>
+                                                                    <img src="./images/landing/khalti-logo.svg" alt="">
+                                                                    <div class="sel-service-title">
+                                                                        नगद विकल्प
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="payment-opt" id="5" hidden>
+                                                            <label class="select-service-card pay-label" for="5">
+                                                                <div class="sel-service-infos">
+                                                                    <i class="fa-solid fa-check-to-slot"></i>
+                                                                    <img src="./images/landing/nepalPay.png" alt="">
+                                                                    <div class="sel-service-title">
+                                                                        नगद विकल्प
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="payment-opt" id="6" hidden>
+                                                            <label class="select-service-card pay-label" for="6">
+                                                                <div class="sel-service-infos">
+                                                                    <i class="fa-solid fa-check-to-slot"></i>
+                                                                    <img src="./images/landing/bank-logo.jpeg" alt="">
+                                                                    <div class="sel-service-title">
+                                                                        नगद विकल्प
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+
+
+                                                    <div class="qr-code" id="qr-6">
+                                                        <div class="card-pay-info">
+                                                            <div class="info-text">
+                                                                <div class="info-div">
+                                                                    <div class="card-label">
+                                                                        Merchant name -6
+                                                                    </div>
+                                                                    <div class="card-name">
+                                                                        Sitaram Jyotish Sewa
+                                                                    </div>
+                                                                </div>
+                                                                <div class="info-div">
+                                                                    <div class="card-label">
+                                                                        Merchant name
+                                                                    </div>
+                                                                    <div class="card-name">
+                                                                        Sitaram Jyotish Sewa
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info-qr">
+                                                                <img src="./images/landing/qr.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="qr-code" id="qr-2">
+                                                        <div class="card-pay-info">
+                                                            <div class="info-text">
+                                                                <div class="info-div">
+                                                                    <div class="card-label">
+                                                                        Merchant name - 2
+                                                                    </div>
+                                                                    <div class="card-name">
+                                                                        Sitaram Jyotish Sewa
+                                                                    </div>
+                                                                </div>
+                                                                <div class="info-div">
+                                                                    <div class="card-label">
+                                                                        Merchant name
+                                                                    </div>
+                                                                    <div class="card-name">
+                                                                        Sitaram Jyotish Sewa
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info-qr">
+                                                                <img src="./images/landing/qr.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="qr-code" id="qr-3">
+                                                        <div class="card-pay-info">
+                                                            <div class="info-text">
+                                                                <div class="info-div">
+                                                                    <div class="card-label">
+                                                                        Merchant name - 3
+                                                                    </div>
+                                                                    <div class="card-name">
+                                                                        Sitaram Jyotish Sewa
+                                                                    </div>
+                                                                </div>
+                                                                <div class="info-div">
+                                                                    <div class="card-label">
+                                                                        Merchant name
+                                                                    </div>
+                                                                    <div class="card-name">
+                                                                        Sitaram Jyotish Sewa
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info-qr">
+                                                                <img src="./images/landing/qr.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="qr-code" id="qr-4">
+                                                        <div class="card-pay-info">
+                                                            <div class="info-text">
+                                                                <div class="info-div">
+                                                                    <div class="card-label">
+                                                                        Merchant name - 4
+                                                                    </div>
+                                                                    <div class="card-name">
+                                                                        Sitaram Jyotish Sewa
+                                                                    </div>
+                                                                </div>
+                                                                <div class="info-div">
+                                                                    <div class="card-label">
+                                                                        Merchant name
+                                                                    </div>
+                                                                    <div class="card-name">
+                                                                        Sitaram Jyotish Sewa
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info-qr">
+                                                                <img src="./images/landing/qr.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="qr-code" id="qr-5">
+                                                        <div class="card-pay-info">
+                                                            <div class="info-text">
+                                                                <div class="info-div">
+                                                                    <div class="card-label">
+                                                                        Merchant name - 5
+                                                                    </div>
+                                                                    <div class="card-name">
+                                                                        Sitaram Jyotish Sewa
+                                                                    </div>
+                                                                </div>
+                                                                <div class="info-div">
+                                                                    <div class="card-label">
+                                                                        Merchant name
+                                                                    </div>
+                                                                    <div class="card-name">
+                                                                        Sitaram Jyotish Sewa
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info-qr">
+                                                                <img src="./images/landing/qr.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="d-md-flex justify-content-between">
+                                                        <div class="btn btn-danger back-step-6">
+                                                            <i class="fa-solid fa-arrow-left"></i> अघिल्लो चरण
+                                                        </div>
+                                                        <div class="btn btn-blue step-submit ml-auto">
+                                                            अगाडि बढ्नुहोस् <i class="fa-solid fa-arrow-right"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </section>
+
+    </div>
+
+
+    </section><!-- #content end -->
+
+    <!-- Footer
+		============================================= -->
+    <footer id="footer" class="">
+        <div class="container-fluid pl-0">
+
+            <!-- Footer Widgets
+				============================================= -->
+            <div class="footer-widgets-wrap">
+                <div class="row m-0 col-mb-50">
+                    <div class="col-lg-5 footer-left pl-0 pr-0">
+                        <!-- <div class="row justify-content-center col-mb-50">
+							<div class="col-md-12 col-lg-12 p-0 pb-0"> -->
+                        <div class="widget subscribe-widget">
+                            <div class="subscribe-sec">
+                                <div class="subs-subtitle">
+                                    हाम्रो न्यूजलेटरको सदस्यता लिनुहोस्
+                                </div>
+                                <div class="subs-title">
+                                    <!-- Reflections on the Wisdom From the Stars and Planets -->
+                                    दैनिक राशिफल, प्रेम राशिफल र टैरो पढाइ आफ्नो इनबक्समा पाउनुहोस्
+                                </div>
+                                <div class="subs-sub">
+                                    समाचार र अपडेटहरू प्राप्त गर्न तपाईंको इमेल ठेगाना प्रयोग गरी साइन अप
+                                    गर्नुहोस्।
+                                </div>
+                                <div class="widget-subscribe-form-result"></div>
+                                <form id="widget-subscribe-form" action="include/subscribe.php" method="post"
+                                    class="mb-0">
+                                    <div class="form__group field">
+                                        <input type="input" class="form__field" placeholder="your_email@gmail.com"
+                                            required="">
+                                        <!-- <label for="name" class="form__label">Name</label> -->
+                                        <button type="submit" class="join-btn">
+                                            <img src="./images/landing/right.svg" alt="">
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="payment-sec">
+
+                                <div class="payment-texts">
+                                    हामी स्वीकार गर्छौं :
+                                </div>
+
+                                <div class="d-flex">
+                                    <div class="pay-image">
+                                        <img src="./images/landing/p3.png" alt="">
+                                    </div>
+                                    <div class="pay-image">
+                                        <img src="./images/landing/p4.png" alt="">
+                                    </div>
+                                    <div class="pay-image">
+                                        <img src="./images/landing/p5.png" alt="">
+                                    </div>
+                                    <div class="pay-image">
+                                        <img src="./images/landing/p1.png" alt="">
+                                    </div>
+                                    <div class="pay-image">
+                                        <img src="./images/landing/p2.png" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- </div>
+
+					</div> -->
+                    <div class="col-lg-7 footer-right">
+
+                        <div class="row col-mb-50">
+                            <div class="col-md-4">
+
+                                <div class="widget">
+
+
+                                    <div class="footer-titles">सम्पर्क विवरण</div>
+
+                                    <div>
+                                        <address>
+                                            <strong>ठेगाना:</strong><br>
+                                            ललितपुर-२३, धापाखेल
+                                        </address>
+                                        <div class="footer-div" title="Phone Number">
+                                            <strong>फोन नम्बर:</strong>
+                                            <a href="tel:">(1) 8547 632521</a>
+                                        </div>
+                                        <div class="footer-div" title="Email Address">
+                                            <strong>
+                                                इमेल ठेगाना:</strong>
+                                            <a href="mailto:">info@canvas.com</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex footer-social mb-2">
+                                        <a href="#" class="social-icon border si-small h-bg-facebook">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+
+                                        <a href="#" class="social-icon border si-small h-bg-x-twitter">
+                                            <i class="fa-brands fa-tiktok"></i>
+                                            <i class="fa-brands fa-tiktok"></i>
+                                        </a>
+
+                                        <a href="#" class="social-icon border si-small h-bg-instagram">
+                                            <i class="fa-brands fa-instagram"></i>
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+
+
+                                        <a href="#" class="social-icon border si-small h-bg-youtube">
+                                            <i class="fa-brands fa-youtube"></i>
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </a>
+
+
+                                        <a href="#" class="social-icon border si-small me-0 h-bg-linkedin">
+                                            <i class="fa-brands fa-linkedin"></i>
+                                            <i class="fa-brands fa-linkedin"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-8">
+
+                                <div class="widget widget_links">
+
+                                    <div class="footer-titles">केहि लिङ्कहरू</div>
+
+                                    <div class="row">
+                                        <div class="col-md-4 col-6">
+                                            <ul>
+                                                <li><a href="https://codex.wordpress.org/">हाम्रो सेवा</a></li>
+                                                <li><a
+                                                        href="https://wordpress.org/support/forum/requests-and-feedback">रत्न</a>
+                                                </li>
+                                                <li><a href="https://wordpress.org/extend/plugins/">ग्रह</a></li>
+                                                <li><a href="https://wordpress.org/support/">राशि</a></li>
+                                                <li><a href="https://wordpress.org/extend/themes/">नक्षत्र</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4 col-6 d-md-block d-sm-none">
+                                            <ul>
+                                                <li><a href="https://wordpress.org/news/">मन्त्र</a></li>
+                                                <li><a href="https://planet.wordpress.org/">आरती</a></li>
+                                                <li><a href="https://wordpress.org/extend/plugins/">चालीसा</a></li>
+                                                <li><a href="https://wordpress.org/support/">स्तोत्र</a></li>
+                                                <li><a href="https://wordpress.org/extend/themes/">गोत्र</a></li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4 col-6">
+                                            <ul>
+                                                <li><a href="https://wordpress.org/news/">हाम्रोबारेमा</a></li>
+                                                <li><a href="https://planet.wordpress.org/">सम्पर्क गर्नुहोस्</a>
+                                                </li>
+                                                <li><a href="https://wordpress.org/extend/plugins/">प्राण
+                                                        प्रतिष्ठा</a>
+                                                </li>
+                                                <li><a href="https://wordpress.org/support/">कुण्डली बनाउने</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div><!-- .footer-widgets-wrap end -->
+
+        </div>
+
+        <!-- Copyrights
+			============================================= -->
+        <div id="copyrights">
+            <div class="container-fluid custom-container">
+                <div class="row align-items-center">
+
+                    <div class="col-md-12 text-center copy-text">
+                        Copyrights &copy;2025 Jyotish Nepal. All Rights Reserved
+                    </div>
+                </div>
+
+            </div>
+        </div><!-- #copyrights end -->
+    </footer><!-- #footer end -->
+
+    </div><!-- #wrapper end -->
+
+    <!-- Go To Top
+	============================================= -->
+    <div id="gotoTop" class="uil uil-angle-up">
+        <i class="fa-solid fa-angle-up"></i>
+    </div>
+
+    <!-- JavaScripts
+	============================================= -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/plugins.min.js"></script>
+    <script src="js/functions.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"
+        integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
+    <script src="js/nepali.js"></script>
+
+    <script>
+
+        var screenWidth = $(window).width();
+        console.log(screenWidth);
+        $(".has-menu, .cnvs-hamburger, .menu-close").on("click", function () {
+            $("#sidebar-menu").toggleClass("show-sidebar");
+            $("#main-menu").toggleClass("show-main-menu");
+        })
+
+        if (screenWidth >= 992) {
+            $(".has-submega").on("mouseenter", function () {
+                $(".sub-mega-menu").not($(this).siblings(".sub-mega-menu")).removeClass("show-sub-mega");
+                $(this).siblings(".sub-mega-menu").addClass("show-sub-mega")
+            })
+            $(".has-submega-p").on("mouseleave", function () {
+                $(".sub-mega-menu").removeClass("show-sub-mega")
+            })
+        }
+
+        else {
+            $(".has-submega").on("click", function () {
+                $(".sub-mega-menu").not($(this).siblings(".sub-mega-menu")).removeClass("show-sub-mega");
+                $(this).siblings(".sub-mega-menu").toggleClass("show-sub-mega")
+            })
+        }
+
+        $("#main-menu").click(function (e) {
+            $(this).removeClass("show-main-menu");
+            $("#sidebar-menu").removeClass("show-sidebar");
+            $(".primary-menu-trigger").removeClass("primary-menu-trigger-active");
+            // alert("working")
+        });
+        $(".menu-close").click(function (e) {
+            $(".primary-menu-trigger").removeClass("primary-menu-trigger-active");
+            // alert("working")
+        });
+        $("#sidebar-menu").click(function (e) {
+            e.stopPropagation();
+        })
+
+    </script>
+
+
+    <script>
+        var animation = {
+            duration: 15000,
+            easing: (t) => t
+        }
+
+    </script>
+
+    <script>
+        setInterval(updateClock, 1000);
+    </script>
+
+    <script>
+        $(document).scroll(function () {
+            var y = $(this).scrollTop();
+            if (y > 200) {
+                $('#header').addClass("attatched");
+            }
+            else {
+                $('#header').removeClass("attatched");
+            }
+        });
+
+        function goToStep(current, next) {
+            $(".ap-form-step-" + current).removeClass("show-steps").addClass("hide-steps");
+            $(".ap-form-step-" + next).addClass("show-steps");
+
+            $(".steps-" + current).removeClass("active-step").addClass("complete-step");
+            $(".steps-" + next).addClass("active-step");
+
+
+            // Scroll to the next step's top
+            setTimeout(() => {
+                const target = $("#step-" + next);
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - 180
+                    }, 600);
+                }
+            }, 100); // Delay to ensure visibility
+        }
+
+        function goBackToStep(current, prev) {
+            $(".ap-form-step-" + current).removeClass("show-steps");
+            $(".ap-form-step-" + prev).removeClass("hide-steps").addClass("show-steps");
+
+            $(".steps-" + current).removeClass("active-step");
+            $(".steps-" + prev).removeClass("complete-step");
+            $(".steps-" + prev).addClass("active-step");
+
+            // Scroll to the previous step's top
+            setTimeout(() => {
+                const target = $("#step-" + prev);
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - 180
+                    }, 600);
+                }
+            }, 100);
+        }
+
+        // Forward step buttons
+        for (let i = 1; i <= 6; i++) {
+            $(".step-" + i + "-submit").on("click", function () {
+                if (i === 1) {
+                    // Validate radio for step 1
+                    if (!$("input[name='service-sel']:checked").val()) {
+                        alert("कृपया सेवा चयन गर्नुहोस्।");
+                        return;
+                    }
+                } else if (i === 3) {
+                    // Validate radio for step 3 (choose astrologer)
+                    if (!$("input[name='choose-astro']:checked").val()) {
+                        alert("कृपया एक जना ज्योतिषी चयन गर्नुहोस्।");
+                        return;
+                    }
+                }
+
+                // If validation passes, move to next step
+                goToStep(i, i + 1);
+            });
+        }
+
+        // Backward step buttons
+        for (let i = 1; i <= 6; i++) {
+            $(".back-step-" + i).on("click", function () {
+                goBackToStep(i + 1, i);
+            });
+        }
+
+        function format(item, state) {
+            if (!item.id) {
+                return item.text;
+            }
+            var countryUrl = "https://hatscripts.github.io/circle-flags/flags/";
+            var stateUrl = "https://oxguy3.github.io/flags/svg/us/";
+            var url = state ? stateUrl : countryUrl;
+            var img = $("<img>", {
+                class: "img-flag",
+                width: 26,
+                src: url + item.element.getAttribute('data-name').toLowerCase() + ".svg"
+            });
+            var span = $("<span>", {
+                text: " " + item.text
+            });
+            span.prepend(img);
+            return span;
+        }
+
+        $(document).ready(function () {
+            $("#countries").select2({
+                templateResult: function (item) {
+
+                    return format(item, false);
+                }
+            });
+
+        });
+
+        $(document).ready(function () {
+            // Initially hide all QR codes
+            $(".qr-code").hide();
+
+            // Handle change event when a payment option is selected
+            $('input[name="payment-opt"]').change(function () {
+                $(".qr-code").hide(); // Hide all QR codes
+
+                // Show the selected payment option's QR code
+                let selectedId = $(this).attr('id'); // Get the ID of the selected radio button
+                $("#qr-" + selectedId).show(); // Show the corresponding QR code
+            });
+
+
+            // Appointment Nepal Select Form
+
+            $('#countries').on('change', function () {
+                if ($(this).val().trim() === 'Nepal') {
+                    $('.country-nepal').removeClass('making-country');
+                    $('.country-foreign').addClass('making-country');
+                } else {
+                    $('.country-nepal').addClass('making-country');
+                    $('.country-foreign').removeClass('making-country');
+                }
+            }).trigger('change');
+        });
+
+    </script>
+
+
+</body>
+
+</html>
