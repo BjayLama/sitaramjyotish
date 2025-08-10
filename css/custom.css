@@ -5132,3 +5132,46 @@ nav .btn .icon {
 		overflow: initial;
 	}
 }
+
+
+
+
+/* NEW ADDED CSS */
+.brata-image {
+	border-radius: 24px;
+	overflow: hidden;
+	margin-bottom: 35px;
+}
+
+.bar-form-desc {
+	font-size: 22px;
+	font-weight: 600;
+	text-align: left;
+	width: 100%;
+	padding-bottom: 15px;
+	margin-bottom: 5px;
+	border-bottom: 2px solid #d6d6d6;
+}
+.dropify-wrapper .dropify-message {
+	display: none;
+}
+/* .dropify-wrapper {
+	width: 200px;
+} */
+
+.photo-label {
+	position: relative;
+	width: 200px;
+	height: 150px;
+	margin-left: auto;
+	border: 1px solid #d6d6d6;
+}
+
+.photo-label label {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-weight: 600;
+	text-align: center;
+}
