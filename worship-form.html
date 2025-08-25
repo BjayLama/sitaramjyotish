@@ -2109,27 +2109,29 @@
             }, 100); // Delay to ensure visibility
         }
 
-        function goBackToStep(current, prev) {
-            $(".ap-form-step-" + current).removeClass("show-steps");
-            $(".ap-form-step-" + prev).removeClass("hide-steps").addClass("show-steps");
+        function goToStep(current, next, doScroll = true) {
+            $(".ap-form-step-" + current).removeClass("show-steps").addClass("hide-steps");
+            $(".ap-form-step-" + next).addClass("show-steps");
 
-            $(".steps-" + current).removeClass("active-step");
-            $(".steps-" + prev).removeClass("complete-step");
-            $(".steps-" + prev).addClass("active-step");
+            $(".steps-" + current).removeClass("active-step").addClass("complete-step");
+            $(".steps-" + next).addClass("active-step");
 
-            // Scroll to the previous step's top
-            setTimeout(() => {
-                const target = $("#step-" + prev);
-                if (target.length) {
-                    $('html, body').animate({
-                        scrollTop: target.offset().top - 180
-                    }, 600);
-                }
-            }, 100);
+            if (doScroll) {
+                // Scroll to the next step's top
+                setTimeout(() => {
+                    const target = $("#step-" + next);
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top - 180
+                        }, 600);
+                    }
+                }, 100);
+            }
         }
+
+        // Call it on page load without scroll
         $(document).ready(function () {
-            // Skip step 1 and go directly to step 2
-            goToStep(1, 2);
+            goToStep(1, 2, false);
         });
         // Forward step buttons
         for (let i = 1; i <= 6; i++) {
