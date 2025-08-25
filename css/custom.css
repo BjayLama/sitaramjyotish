@@ -3140,6 +3140,10 @@ nav .btn .icon {
     z-index: 1;	
 }
 
+.worship-form .steps-count::before {
+    height: 87%;
+}
+
 
 
 
