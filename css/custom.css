@@ -3488,10 +3488,10 @@ nav .btn .icon {
 	position: absolute;
     width: 116%;
     height: 125%;
-    top: -10px;
-    left: -15px;
-	animation: spin 22s infinite linear;
-	-webkit-animation: spin 22s infinite linear;
+    top: 50%;
+    left: 50%;
+	animation: spin2 22s infinite linear;
+	-webkit-animation: spin2 22s infinite linear;
 	opacity: 0.65;
 	background-image: url(../images/landing/mantra-bg-2.svg);
 	background-position: center;
@@ -3604,9 +3604,6 @@ nav .btn .icon {
 	    .about-title.about-name-t {
 			font-size: 32px;
 			margin-bottom: 8px;
-		}
-		.mantra-card .bg-image::before {
-			left: -9px;
 		}
 
 }
@@ -4079,9 +4076,7 @@ nav .btn .icon {
 	.planets-card.planets-inner-cards, .service-single-img.planets-img img, .service-single-img.planets-img  {
 		width: 100%;
 	}
-	.mantra-card .bg-image::before {
-		left: -25px;
-	}
+
 
 	.infos-title {
 		font-size: 22px;
@@ -5065,6 +5060,10 @@ nav .btn .icon {
     0%  {-webkit-transform: rotate(0deg);}
     100% {-webkit-transform: rotate(360deg);}   
 }
+@-webkit-keyframes spin2 {
+   from { transform: translate(-50%, -50%) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg); }  
+}
 
 
 
@@ -5174,4 +5173,245 @@ nav .btn .icon {
 	transform: translate(-50%, -50%);
 	font-weight: 600;
 	text-align: center;
+}
+
+.heading-kundali-image {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.img-wrapper {
+	z-index: 2;
+	position: relative;
+	width: 250px;
+}
+.plan {
+    position: relative;
+    border-radius: 8px;
+}
+.pricing-table .plan .plan-price .price {
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pricing-table .plan .plan-price .price del {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+}
+.plan-footer {
+    background-color: #f7f7f7;
+}
+.ribbon {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 75px;
+    height: 75px;
+    text-align: right;
+}
+.ribbon span {
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    line-height: 20px;
+    transform: rotate(45deg);
+    width: 100px;
+    display: block;
+    background: #79a70a;
+    background: linear-gradient(#9bc90d 0%, #79a70a 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 19px;
+    right: -21px;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.6);
+}
+.ribbon span::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid #79a70a;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #79a70a;
+}
+.ribbon span::after {
+    content: "";
+    position: absolute;
+    right: 0%;
+    top: 100%;
+    z-index: -1;
+    border-right: 3px solid #79a70a;
+    border-left: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #79a70a;
+}
+.red span {
+    background: linear-gradient(#f70505 0%, #8f0808 100%);
+}
+.red span::before {
+    border-left-color: #8f0808;
+    border-top-color: #8f0808;
+}
+.red span::after {
+    border-right-color: #8f0808;
+    border-top-color: #8f0808;
+}
+.pricing-table {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.pricing-table .plan {
+	background: #FFF;
+	border-radius: 12px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.pricing-table .plan .plan-price,
+.pricing-table .plan .plan-features,
+.pricing-table .plan .plan-footer {
+	border: 1px solid #ededed;
+}
+
+.pricing-table .plan .plan-header {
+	background: #5b0069;
+	padding: 15.2px 16px;
+	padding: 0.95rem 1rem;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+
+.pricing-table .plan .plan-header h3 {
+	color: #FFF;
+	font-size: 12.8px;
+	font-size: 0.8rem;
+	font-weight: 600;
+	line-height: 1;
+	letter-spacing: 0;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+.pricing-table .plan .plan-price {
+	display: flex;
+	flex-direction: column;
+	background: #f7f7f7;
+	border-top: 0;
+	border-bottom: 0;
+	padding: 32px 12.8px;
+	padding: 2rem 0.8rem;
+	text-align: center;
+}
+
+.pricing-table .plan .plan-price .price {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	font-size: 43.2px;
+	font-size: 2.7rem;
+	font-weight: 600;
+	line-height: 1;
+	color: #212529;
+}
+
+.pricing-table .plan .plan-price .price .price-unit {
+	font-size: 50%;
+	line-height: 1.4;
+}
+
+.pricing-table .plan .plan-price .price-label {
+	text-transform: uppercase;
+	color: #777;
+	font-size: 11.2px;
+	font-size: 0.7rem;
+	line-height: 1;
+	margin-bottom: 0;
+}
+
+.pricing-table .plan .plan-features {
+	border-top: 0;
+	border-bottom: 0;
+	padding: 12.8px;
+	padding: 0.8rem;
+	text-align: center;
+}
+
+.pricing-table .plan .plan-features ul {
+	padding: 0 8px 0 8px;
+	padding: 0 0.5rem 0 0.5rem;
+	margin-bottom: 0;
+}
+
+.pricing-table .plan .plan-features ul li {
+	border-bottom: 1px solid #ededed;
+	line-height: 2.9;
+	list-style: none;
+	font-size: 16px;
+}
+
+.pricing-table .plan .plan-features ul li:last-child {
+	border-bottom: 0;
+}
+
+.pricing-table .plan .plan-footer {
+	border-top: 0;
+	padding: 24px 12.8px 40px;
+	padding: 1.5rem 0.8rem 2.5rem;
+	text-align: center;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+}
+
+.pricing-table .plan.plan-featured {
+	position: relative;
+	box-shadow: 0px 0px 40px rgba(200, 200, 200, 0.3);
+	transform: scale(1.15);
+	z-index: 1;
+}
+
+.pricing-table .plan.plan-featured .plan-header h3,
+.pricing-table .plan.plan-featured .plan-features ul li {
+	font-size: 12.8px;
+	font-size: 0.8rem;
+}
+.plan-price p {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.price del {
+	color: #6d060b;
+}
+@media (max-width: 767px) {
+	.pricing-table .plan.plan-featured {
+		transform: scale(1);
+	}
+
+	.pricing-table .plan.plan-featured .plan-header h3,
+		.pricing-table .plan.plan-featured .plan-features ul li {
+		font-size: 0.9rem;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.heading-kundali-image {
+		flex-direction: column;
+	}
+	.img-wrapper {
+		margin-bottom: 20px;
+	}
+	.kundali-wrapper {
+		padding: 25px 15px;
+	}
 }

@@ -203,6 +203,11 @@
                                 <div>गृहपृष्ठ</div>
                             </a>
                         </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="blog.html">
+                                <div>हाम्रो ब्लोग </div>
+                            </a>
+                        </li>
                         <li class="menu-item has-submega-p p-static">
                             <a class="menu-link has-submega" href="javascript:void(0)">
                                 <div>हाम्रा सेवाहरू</div>
@@ -879,7 +884,7 @@
                                                                         चिना जुराउने
                                                                     </div>
                                                                     <div class="sel-service-time">
-                                                                        ३० मिनेट / आधा घण्टा
+                                                                        १० देखि १५ मिनेट
                                                                     </div>
                                                                 </div>
                                                             </label>
@@ -898,7 +903,7 @@
                                                                         चिना जुराउने (विदेशमा रहनु भएको)
                                                                     </div>
                                                                     <div class="sel-service-time">
-                                                                        ३० मिनेट / आधा घण्टा
+                                                                        १० देखि १५ मिनेट
                                                                     </div>
                                                                 </div>
                                                             </label>
@@ -917,7 +922,7 @@
                                                                         चिना बनाउने
                                                                     </div>
                                                                     <div class="sel-service-time">
-                                                                        ३० मिनेट / आधा घण्टा
+                                                                        ३-७ दिन
                                                                     </div>
                                                                 </div>
                                                             </label>
@@ -936,7 +941,7 @@
                                                                         चिना बनाउने (विदेशमा जन्मनु भएको)
                                                                     </div>
                                                                     <div class="sel-service-time">
-                                                                        ३० मिनेट / आधा घण्टा
+                                                                        ३-७ दिन
                                                                     </div>
                                                                 </div>
                                                             </label>
@@ -955,7 +960,7 @@
                                                                         चिना बनाउने (PDF)
                                                                     </div>
                                                                     <div class="sel-service-time">
-                                                                        ३० मिनेट / आधा घण्टा
+                                                                        ३-७ दिन
                                                                     </div>
                                                                 </div>
                                                             </label>
@@ -974,7 +979,7 @@
                                                                         चिना बनाउने (विदेशमा जन्मनु भएको) (PDF)
                                                                     </div>
                                                                     <div class="sel-service-time">
-                                                                        ३० मिनेट / आधा घण्टा
+                                                                        ३-७ दिन
                                                                     </div>
                                                                 </div>
                                                             </label>
@@ -1107,23 +1112,33 @@
                                         </div>
                                         <div id="step-4" class="ap-form-style ap-form-step-4">
                                             <form action="" class="h-100">
-                                                <div class="ap-form-heading mb-5">
-                                                    <div class="ap-form-title">
-                                                        आफ्नो व्यक्तिगत जानकारी थप्नुहोस्
-
+                                                <div class="service-input row mt-3">
+                                                    <div class="col-12">
+                                                        <div class="ap-form-heading mb-5">
+                                                            <div class="ap-form-title">
+                                                                दुलहाको विवरण
+                                                            </div>
+                                                            <div class="ap-form-desc">
+                                                                सही नतिजाको लागि आफ्नो व्यक्तिगत विवरणहरू थप्नुहोस्
+                                                                <small><i>* भएका क्षेत्रहरू आवश्यक छन्।</i></small>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="ap-form-desc">
-                                                        सही नतिजाको लागि आफ्नो व्यक्तिगत विवरणहरू थप्नुहोस्
-                                                        <small><i>* भएका क्षेत्रहरू आवश्यक छन्।</i></small>
-                                                    </div>
-                                                </div>
-                                                <div class="service-input row">
                                                     <div class="col-md-6">
                                                         <div class="input-select">
                                                             <input required type="text" class="input">
                                                             <span class="bar"></span>
                                                             <label>
                                                                 पूरा नाम: <span class="red">*</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="input-select">
+                                                            <input required type="text" class="input">
+                                                            <span class="bar"></span>
+                                                            <label>
+                                                                न्वारनको नाम : <span class="red">*</span>
                                                             </label>
                                                         </div>
                                                     </div>
@@ -1139,14 +1154,7 @@
                                                             <input required="" type="text" class="input">
                                                             <span class="bar"></span>
                                                             <label>
-                                                                फोन नम्बर: <span class="red">*</span></label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="input-select">
-                                                            <input required="" type="email" class="input">
-                                                            <span class="bar"></span>
-                                                            <label>फोन नम्बर(वैकल्पिक):
+                                                                मोबाइल नम्बर: <span class="red">*</span></label>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
@@ -1173,49 +1181,13 @@
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="input-select top-label">
-                                                            <select name="" id="" class="input">
-
-                                                                <option value="1">पुरुष/Male</option>
-                                                                <option value="2">महिला/Female</option>
-                                                                <option value="3">अन्य/Others</option>
-                                                            </select>
+                                                            <input required="" type="text" class="input">
                                                             <span class="bar"></span>
                                                             <label>
-                                                                लिङ्ग चयन गर्नुहोस्/Gender</label>
+                                                                जन्मस्थान:</label>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="service-input row mt-3">
-                                                    <div class="col-12">
-                                                        <div class="ap-form-heading mb-5">
-                                                            <div class="ap-form-title">
-                                                                दुलहाको विवरण
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="input-select top-label">
-                                                            <input required="" type="date" class="input">
-                                                            <span class="bar"></span>
-                                                            <label>जन्म मिति (बी.एस.):</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="input-select top-label">
-                                                            <input required="" type="date" class="input">
-                                                            <span class="bar"></span>
-                                                            <label>जन्म मिति (A.D.):</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="input-select top-label">
-                                                            <input required="" type="time" class="input">
-                                                            <span class="bar"></span>
-                                                            <label>
-                                                                जन्म समय:</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-12">
                                                         <div class="input-select">
                                                             <input required="" type="email" class="input">
                                                             <span class="bar"></span>
@@ -1233,6 +1205,39 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
+                                                        <div class="input-select">
+                                                            <input required type="text" class="input">
+                                                            <span class="bar"></span>
+                                                            <label>
+                                                                पूरा नाम: <span class="red">*</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="input-select">
+                                                            <input required type="text" class="input">
+                                                            <span class="bar"></span>
+                                                            <label>
+                                                                न्वारनको नाम : <span class="red">*</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="input-select">
+                                                            <input required="" type="email" class="input">
+                                                            <span class="bar"></span>
+                                                            <label>इमेल ठेगाना: <span class="red">*</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="input-select">
+                                                            <input required="" type="text" class="input">
+                                                            <span class="bar"></span>
+                                                            <label>
+                                                                मोबाइल नम्बर: <span class="red">*</span></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
                                                         <div class="input-select top-label">
                                                             <input required="" type="date" class="input">
                                                             <span class="bar"></span>
@@ -1255,6 +1260,14 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
+                                                        <div class="input-select top-label">
+                                                            <input required="" type="text" class="input">
+                                                            <span class="bar"></span>
+                                                            <label>
+                                                                जन्मस्थान:</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
                                                         <div class="input-select">
                                                             <input required="" type="email" class="input">
                                                             <span class="bar"></span>
@@ -1386,10 +1399,10 @@
                                                                         </div>
                                                                         <div class="sel-service-infos">
                                                                             <div class="sel-service-title">
-                                                                                चिना हेर्ने
+                                                                                चिना जुराउने
                                                                             </div>
                                                                             <div class="sel-service-time">
-                                                                                ३० मिनेट / आधा घण्टा
+                                                                                ३-७ दिन
                                                                             </div>
                                                                         </div>
                                                                     </label>
@@ -1588,7 +1601,7 @@
                                                                     <i class="fa-solid fa-check-to-slot"></i>
                                                                     <img src="./images/landing/cod.png" alt="">
                                                                     <div class="sel-service-title">
-                                                                        नगद विकल्प
+                                                                        नगद
                                                                     </div>
                                                                 </div>
                                                             </label>
@@ -1599,9 +1612,9 @@
                                                                 <div class="sel-service-infos">
                                                                     <i class="fa-solid fa-check-to-slot"></i>
                                                                     <img src="./images/landing/fonepay-logo.png" alt="">
-                                                                    <div class="sel-service-title">
-                                                                        नगद विकल्प
-                                                                    </div>
+                                                                    <!-- <div class="sel-service-title">
+                                                                        नगद
+                                                                    </div> -->
                                                                 </div>
                                                             </label>
 
@@ -1614,9 +1627,9 @@
                                                                 <div class="sel-service-infos">
                                                                     <i class="fa-solid fa-check-to-slot"></i>
                                                                     <img src="./images/landing/esewa-logo.png" alt="">
-                                                                    <div class="sel-service-title">
-                                                                        नगद विकल्प
-                                                                    </div>
+                                                                    <!-- <div class="sel-service-title">
+                                                                        नगद
+                                                                    </div> -->
                                                                 </div>
                                                             </label>
                                                         </li>
@@ -1626,9 +1639,9 @@
                                                                 <div class="sel-service-infos">
                                                                     <i class="fa-solid fa-check-to-slot"></i>
                                                                     <img src="./images/landing/khalti-logo.svg" alt="">
-                                                                    <div class="sel-service-title">
-                                                                        नगद विकल्प
-                                                                    </div>
+                                                                    <!-- <div class="sel-service-title">
+                                                                        नगद
+                                                                    </div> -->
                                                                 </div>
                                                             </label>
                                                         </li>
@@ -1638,9 +1651,9 @@
                                                                 <div class="sel-service-infos">
                                                                     <i class="fa-solid fa-check-to-slot"></i>
                                                                     <img src="./images/landing/nepalPay.png" alt="">
-                                                                    <div class="sel-service-title">
-                                                                        नगद विकल्प
-                                                                    </div>
+                                                                    <!-- <div class="sel-service-title">
+                                                                        नगद
+                                                                    </div> -->
                                                                 </div>
                                                             </label>
                                                         </li>
@@ -1650,9 +1663,9 @@
                                                                 <div class="sel-service-infos">
                                                                     <i class="fa-solid fa-check-to-slot"></i>
                                                                     <img src="./images/landing/bank-logo.jpeg" alt="">
-                                                                    <div class="sel-service-title">
-                                                                        नगद विकल्प
-                                                                    </div>
+                                                                    <!-- <div class="sel-service-title">
+                                                                        नगद
+                                                                    </div> -->
                                                                 </div>
                                                             </label>
                                                         </li>
